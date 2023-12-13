@@ -1,0 +1,937 @@
+<!doctype html><html lang=en class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Write your documentation in Markdown and create a professional static site in minutes – searchable, customizable, in 60+ languages, for all devices"><meta name=author content="Martin Donath"><link href=https://kuanghl.github.io/mkdocs-demo/blog/about/ rel=canonical><link href=../ rel=prev><link rel=icon href=../../assets/favicon.png><meta name=generator content="mkdocs-1.5.3, mkdocs-material-9.5.2"><title>About - Material for MkDocs</title><link rel=stylesheet href=../../assets/stylesheets/main.50c56a3b.min.css><link rel=stylesheet href=../../assets/stylesheets/palette.06af60db.min.css><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback"><style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style><script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script><script id=__analytics>function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config",""),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script><script>"undefined"!=typeof __md_analytics&&__md_analytics()</script><link rel=stylesheet href=../../assets/stylesheets/custom.00c04c01.min.css></head> <body dir=ltr data-md-color-scheme=default data-md-color-primary=indigo data-md-color-accent=indigo> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#1 class=md-skip> Skip to content </a> </div> <div data-md-component=announce> <aside class=md-banner> <div class="md-banner__inner md-grid md-typeset"> <button class="md-banner__button md-icon" aria-label="Don't show this again"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg> </button> For updates follow <strong>@squidfunk</strong> on <a rel=me href=https://fosstodon.org/@squidfunk> <span class="twemoji mastodon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg> </span> <strong>Fosstodon</strong> </a> and <a href=https://twitter.com/squidfunk> <span class="twemoji twitter"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> </span> <strong>Twitter</strong> </a> </div> <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script> </aside> </div> <header class=md-header data-md-component=header> <nav class="md-header__inner md-grid" aria-label=Header> <a href=../.. title="Material for MkDocs" class="md-header__button md-logo" aria-label="Material for MkDocs" data-md-component=logo> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 89 89"> <path d=M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z /> <path d=M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z style="fill-opacity: 0.5"/> <path d=M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z /> <path d=M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z style="fill-opacity: 0.25"/> </svg> </a> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg> </label> <div class=md-header__title data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic> <span class=md-ellipsis> Material for MkDocs </span> </div> <div class=md-header__topic data-md-component=header-topic> <span class=md-ellipsis> About </span> </div> </div> </div> <form class=md-header__option data-md-component=palette> <input class=md-option data-md-color-media=(prefers-color-scheme) data-md-color-scheme=default data-md-color-primary=indigo data-md-color-accent=indigo aria-label="Switch to light mode" type=radio name=__palette id=__palette_0> <label class="md-header__button md-icon" title="Switch to light mode" for=__palette_1 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg> </label> <input class=md-option data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme=default data-md-color-primary=indigo data-md-color-accent=indigo aria-label="Switch to dark mode" type=radio name=__palette id=__palette_1> <label class="md-header__button md-icon" title="Switch to dark mode" for=__palette_2 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg> </label> <input class=md-option data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme=slate data-md-color-primary=black data-md-color-accent=indigo aria-label="Switch to system preference" type=radio name=__palette id=__palette_2> <label class="md-header__button md-icon" title="Switch to system preference" for=__palette_0 hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg> </label> </form> <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=Search placeholder=Search autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </label> <nav class=md-search__options aria-label=Search> <a href=javascript:void(0) class="md-search__icon md-icon" title=Share aria-label=Share data-clipboard data-clipboard-text data-md-component=search-share tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg> </a> <button type=reset class="md-search__icon md-icon" title=Clear aria-label=Clear tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg> </button> </nav> <div class=md-search__suggest data-md-component=search-suggest></div> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> Initializing search </div> <ol class=md-search-result__list role=presentation></ol> </div> </div> </div> </div> </div> <div class=md-header__source> <a href=https://github.com/kuanghl/mkdocs-demo title="Go to repository" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg> </div> <div class=md-source__repository> kuanghl/mkdocs-demo </div> </a> </div> </nav> </header> <div class=md-container data-md-component=container> <nav class=md-tabs aria-label=Tabs data-md-component=tabs> <div class=md-grid> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class=md-tabs__link> Home </a> </li> <li class=md-tabs__item> <a href=../../env/ class=md-tabs__link> Environment </a> </li> <li class=md-tabs__item> <a href=../../setup/ class=md-tabs__link> Setup </a> </li> <li class=md-tabs__item> <a href=../../plugins/ class=md-tabs__link> Plugins </a> </li> <li class=md-tabs__item> <a href=../../ref/ class=md-tabs__link> Reference </a> </li> <li class=md-tabs__item> <a href=../../insiders/ class=md-tabs__link> Insiders </a> </li> <li class="md-tabs__item md-tabs__item--active"> <a href=../ class=md-tabs__link> Blog </a> </li> </ul> </div> </nav> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label=Navigation data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title="Material for MkDocs" class="md-nav__button md-logo" aria-label="Material for MkDocs" data-md-component=logo> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 89 89"> <path d=M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z /> <path d=M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z style="fill-opacity: 0.5"/> <path d=M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z /> <path d=M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z style="fill-opacity: 0.25"/> </svg> </a> Material for MkDocs </label> <div class=md-nav__source> <a href=https://github.com/kuanghl/mkdocs-demo title="Go to repository" class=md-source data-md-component=source> <div class="md-source__icon md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg> </div> <div class=md-source__repository> kuanghl/mkdocs-demo </div> </a> </div> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. class=md-nav__link> <span class=md-ellipsis> Home </span> </a> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_2> <div class="md-nav__link md-nav__container"> <a href=../../env/ class="md-nav__link "> <span class=md-ellipsis> Environment </span> </a> <label class="md-nav__link " for=__nav_2 id=__nav_2_label tabindex> <span class="md-nav__icon md-icon"></span> </label> </div> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_2_label aria-expanded=false> <label class=md-nav__title for=__nav_2> <span class="md-nav__icon md-icon"></span> Environment </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../env/dlbook/ class=md-nav__link> <span class=md-ellipsis> ubuntu </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_3> <div class="md-nav__link md-nav__container"> <a href=../../setup/ class="md-nav__link "> <span class=md-ellipsis> Setup </span> </a> </div> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_3_label aria-expanded=false> <label class=md-nav__title for=__nav_3> <span class="md-nav__icon md-icon"></span> Setup </label> <ul class=md-nav__list data-md-scrollfix> </ul> </nav> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_4> <div class="md-nav__link md-nav__container"> <a href=../../plugins/ class="md-nav__link "> <span class=md-ellipsis> Plugins </span> </a> <label class="md-nav__link " for=__nav_4 id=__nav_4_label tabindex> <span class="md-nav__icon md-icon"></span> </label> </div> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_4_label aria-expanded=false> <label class=md-nav__title for=__nav_4> <span class="md-nav__icon md-icon"></span> Plugins </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../plugins/test/ class=md-nav__link> <span class=md-ellipsis> Ptest </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_5> <div class="md-nav__link md-nav__container"> <a href=../../ref/ class="md-nav__link "> <span class=md-ellipsis> Reference </span> </a> <label class="md-nav__link " for=__nav_5 id=__nav_5_label tabindex> <span class="md-nav__icon md-icon"></span> </label> </div> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_5_label aria-expanded=false> <label class=md-nav__title for=__nav_5> <span class="md-nav__icon md-icon"></span> Reference </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../ref/tags/ class=md-nav__link> <span class=md-ellipsis> Annotations </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_6> <div class="md-nav__link md-nav__container"> <a href=../../insiders/ class="md-nav__link "> <span class=md-ellipsis> Insiders </span> </a> <label class="md-nav__link " for=__nav_6 id=__nav_6_label tabindex> <span class="md-nav__icon md-icon"></span> </label> </div> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_6_label aria-expanded=false> <label class=md-nav__title for=__nav_6> <span class="md-nav__icon md-icon"></span> Insiders </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../insiders/geting/ class=md-nav__link> <span class=md-ellipsis> Getting started </span> </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested"> <input class="md-nav__toggle md-toggle " type=checkbox id=__nav_7 checked> <div class="md-nav__link md-nav__container"> <a href=../ class="md-nav__link "> <span class=md-ellipsis> Blog </span> </a> <label class="md-nav__link " for=__nav_7 id=__nav_7_label tabindex> <span class="md-nav__icon md-icon"></span> </label> </div> <nav class=md-nav data-md-level=1 aria-labelledby=__nav_7_label aria-expanded=true> <label class=md-nav__title for=__nav_7> <span class="md-nav__icon md-icon"></span> Blog </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--active"> <input class="md-nav__toggle md-toggle" type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> <span class=md-ellipsis> About </span> <span class="md-nav__icon md-icon"></span> </label> <a href=./ class="md-nav__link md-nav__link--active"> <span class=md-ellipsis> About </span> </a> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> Table of contents </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#1 class=md-nav__link> <span class=md-ellipsis> 1. 参考 </span> </a> </li> <li class=md-nav__item> <a href=#2 class=md-nav__link> <span class=md-ellipsis> 2. 基本文字格式 </span> </a> <nav class=md-nav aria-label="2. 基本文字格式"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#21 class=md-nav__link> <span class=md-ellipsis> 2.1. 标题 </span> </a> </li> <li class=md-nav__item> <a href=#22 class=md-nav__link> <span class=md-ellipsis> 2.2. 文字表述 </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#include class=md-nav__link> <span class=md-ellipsis> include </span> </a> <nav class=md-nav aria-label=include> <ul class=md-nav__list> <li class=md-nav__item> <a href=#23 class=md-nav__link> <span class=md-ellipsis> 2.3. 跳转 </span> </a> </li> <li class=md-nav__item> <a href=#24 class=md-nav__link> <span class=md-ellipsis> 2.4. 其他 </span> </a> </li> <li class=md-nav__item> <a href=#3 class=md-nav__link> <span class=md-ellipsis> 3. 基本公式 </span> </a> <nav class=md-nav aria-label="3. 基本公式"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#31-katex class=md-nav__link> <span class=md-ellipsis> 3.1. KaTex </span> </a> </li> <li class=md-nav__item> <a href=#32-mathjax class=md-nav__link> <span class=md-ellipsis> 3.2. MathJax </span> </a> </li> <li class=md-nav__item> <a href=#33-latex class=md-nav__link> <span class=md-ellipsis> 3.3. Latex </span> </a> </li> <li class=md-nav__item> <a href=#34 class=md-nav__link> <span class=md-ellipsis> 3.4. 代码块渲染 </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#4 class=md-nav__link> <span class=md-ellipsis> 4. 基本绘图 </span> </a> <nav class=md-nav aria-label="4. 基本绘图"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#41-mermaidflowchartganttsequencediagramclassdiagramstatediagram-v2journeyc4context class=md-nav__link> <span class=md-ellipsis> 4.1. Mermaid(flowchart/gantt/sequenceDiagram/classDiagram/stateDiagram-v2/journey/C4Context) </span> </a> </li> <li class=md-nav__item> <a href=#42-wavedromassignregsignal class=md-nav__link> <span class=md-ellipsis> 4.2. wavedrom(assign/reg/signal) </span> </a> </li> <li class=md-nav__item> <a href=#43-bitfield class=md-nav__link> <span class=md-ellipsis> 4.3. bitfield </span> </a> </li> <li class=md-nav__item> <a href=#44-graphviz class=md-nav__link> <span class=md-ellipsis> 4.4. GraphViz </span> </a> </li> <li class=md-nav__item> <a href=#45-vegavega-lite class=md-nav__link> <span class=md-ellipsis> 4.5. Vega/Vega-lite </span> </a> </li> <li class=md-nav__item> <a href=#46-kroki class=md-nav__link> <span class=md-ellipsis> 4.6. Kroki </span> </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../.. class=md-nav__link> <span class=md-ellipsis> Archive </span> </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label="Table of contents"> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> Table of contents </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#1 class=md-nav__link> <span class=md-ellipsis> 1. 参考 </span> </a> </li> <li class=md-nav__item> <a href=#2 class=md-nav__link> <span class=md-ellipsis> 2. 基本文字格式 </span> </a> <nav class=md-nav aria-label="2. 基本文字格式"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#21 class=md-nav__link> <span class=md-ellipsis> 2.1. 标题 </span> </a> </li> <li class=md-nav__item> <a href=#22 class=md-nav__link> <span class=md-ellipsis> 2.2. 文字表述 </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#include class=md-nav__link> <span class=md-ellipsis> include </span> </a> <nav class=md-nav aria-label=include> <ul class=md-nav__list> <li class=md-nav__item> <a href=#23 class=md-nav__link> <span class=md-ellipsis> 2.3. 跳转 </span> </a> </li> <li class=md-nav__item> <a href=#24 class=md-nav__link> <span class=md-ellipsis> 2.4. 其他 </span> </a> </li> <li class=md-nav__item> <a href=#3 class=md-nav__link> <span class=md-ellipsis> 3. 基本公式 </span> </a> <nav class=md-nav aria-label="3. 基本公式"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#31-katex class=md-nav__link> <span class=md-ellipsis> 3.1. KaTex </span> </a> </li> <li class=md-nav__item> <a href=#32-mathjax class=md-nav__link> <span class=md-ellipsis> 3.2. MathJax </span> </a> </li> <li class=md-nav__item> <a href=#33-latex class=md-nav__link> <span class=md-ellipsis> 3.3. Latex </span> </a> </li> <li class=md-nav__item> <a href=#34 class=md-nav__link> <span class=md-ellipsis> 3.4. 代码块渲染 </span> </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#4 class=md-nav__link> <span class=md-ellipsis> 4. 基本绘图 </span> </a> <nav class=md-nav aria-label="4. 基本绘图"> <ul class=md-nav__list> <li class=md-nav__item> <a href=#41-mermaidflowchartganttsequencediagramclassdiagramstatediagram-v2journeyc4context class=md-nav__link> <span class=md-ellipsis> 4.1. Mermaid(flowchart/gantt/sequenceDiagram/classDiagram/stateDiagram-v2/journey/C4Context) </span> </a> </li> <li class=md-nav__item> <a href=#42-wavedromassignregsignal class=md-nav__link> <span class=md-ellipsis> 4.2. wavedrom(assign/reg/signal) </span> </a> </li> <li class=md-nav__item> <a href=#43-bitfield class=md-nav__link> <span class=md-ellipsis> 4.3. bitfield </span> </a> </li> <li class=md-nav__item> <a href=#44-graphviz class=md-nav__link> <span class=md-ellipsis> 4.4. GraphViz </span> </a> </li> <li class=md-nav__item> <a href=#45-vegavega-lite class=md-nav__link> <span class=md-ellipsis> 4.5. Vega/Vega-lite </span> </a> </li> <li class=md-nav__item> <a href=#46-kroki class=md-nav__link> <span class=md-ellipsis> 4.6. Kroki </span> </a> </li> </ul> </nav> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <a href=https://github.com/kuanghl/mkdocs-demo/edit/master/docs/blog/about.md title="Edit this page" class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg> </a> <a href=https://github.com/kuanghl/mkdocs-demo/raw/master/docs/blog/about.md title="View source of this page" class="md-content__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg> </a> <h3 id=1>1. <a href=https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/toc>参考</a><a class=headerlink href=#1 title="Permanent link">&para;</a></h3> <h3 id=2>2. 基本文字格式<a class=headerlink href=#2 title="Permanent link">&para;</a></h3> <p>简述markdown使用天然的对html语法支持,所有如果有些复杂渲染毕竟难实现,可以考虑通过网页前端代码提高便捷性</p> <h4 id=21>2.1. 标题<a class=headerlink href=#21 title="Permanent link">&para;</a></h4> <ul class=task-list> <li><mark>code</mark> <div class="language-md highlight"><pre><span></span><code><span id=__span-0-1><a id=__codelineno-0-1 name=__codelineno-0-1 href=#__codelineno-0-1></a><span class=k>-</span><span class=w> </span>这是无序列表标题1
+</span><span id=__span-0-2><a id=__codelineno-0-2 name=__codelineno-0-2 href=#__codelineno-0-2></a><span class=k>-</span><span class=w> </span>这是无序列表标题2
+</span><span id=__span-0-3><a id=__codelineno-0-3 name=__codelineno-0-3 href=#__codelineno-0-3></a><span class=k>-</span><span class=w> </span>这是无序列表标题3
+</span><span id=__span-0-4><a id=__codelineno-0-4 name=__codelineno-0-4 href=#__codelineno-0-4></a>
+</span><span id=__span-0-5><a id=__codelineno-0-5 name=__codelineno-0-5 href=#__codelineno-0-5></a><span class=k>- [ ]</span> 这是未完成任务列表标题1
+</span><span id=__span-0-6><a id=__codelineno-0-6 name=__codelineno-0-6 href=#__codelineno-0-6></a><span class=k>- [ ]</span> 这是未完成任务列表标题2
+</span><span id=__span-0-7><a id=__codelineno-0-7 name=__codelineno-0-7 href=#__codelineno-0-7></a><span class=k>- [ ]</span> 这是未完成任务列表标题3
+</span><span id=__span-0-8><a id=__codelineno-0-8 name=__codelineno-0-8 href=#__codelineno-0-8></a>
+</span><span id=__span-0-9><a id=__codelineno-0-9 name=__codelineno-0-9 href=#__codelineno-0-9></a><span class=k>- [x]</span> 这是已完成列表标题1
+</span><span id=__span-0-10><a id=__codelineno-0-10 name=__codelineno-0-10 href=#__codelineno-0-10></a><span class=k>- [x]</span> 这是已完成列表标题2
+</span><span id=__span-0-11><a id=__codelineno-0-11 name=__codelineno-0-11 href=#__codelineno-0-11></a><span class=k>- [x]</span> 这是已完成列表标题3
+</span><span id=__span-0-12><a id=__codelineno-0-12 name=__codelineno-0-12 href=#__codelineno-0-12></a>
+</span><span id=__span-0-13><a id=__codelineno-0-13 name=__codelineno-0-13 href=#__codelineno-0-13></a><span class=k>1.</span> 这是有序标题1
+</span><span id=__span-0-14><a id=__codelineno-0-14 name=__codelineno-0-14 href=#__codelineno-0-14></a><span class=k>2.</span> 这是有序标题2
+</span><span id=__span-0-15><a id=__codelineno-0-15 name=__codelineno-0-15 href=#__codelineno-0-15></a><span class=k>3.</span> 这是有序标题3
+</span><span id=__span-0-16><a id=__codelineno-0-16 name=__codelineno-0-16 href=#__codelineno-0-16></a>
+</span><span id=__span-0-17><a id=__codelineno-0-17 name=__codelineno-0-17 href=#__codelineno-0-17></a><span class=gh># 这是 &lt;h1&gt; 一级标题</span>
+</span><span id=__span-0-18><a id=__codelineno-0-18 name=__codelineno-0-18 href=#__codelineno-0-18></a><span class=gu>## 这是 &lt;h2&gt; 二级标题</span>
+</span><span id=__span-0-19><a id=__codelineno-0-19 name=__codelineno-0-19 href=#__codelineno-0-19></a><span class=gu>### 这是 &lt;h3&gt; 三级标题</span>
+</span><span id=__span-0-20><a id=__codelineno-0-20 name=__codelineno-0-20 href=#__codelineno-0-20></a><span class=gu>#### 这是 &lt;h4&gt; 四级标题</span>
+</span><span id=__span-0-21><a id=__codelineno-0-21 name=__codelineno-0-21 href=#__codelineno-0-21></a><span class=gu>##### 这是 &lt;h5&gt; 五级标题</span>
+</span><span id=__span-0-22><a id=__codelineno-0-22 name=__codelineno-0-22 href=#__codelineno-0-22></a><span class=gu>###### 这是 &lt;h6&gt; 六级标题</span>
+</span><span id=__span-0-23><a id=__codelineno-0-23 name=__codelineno-0-23 href=#__codelineno-0-23></a>
+</span><span id=__span-0-24><a id=__codelineno-0-24 name=__codelineno-0-24 href=#__codelineno-0-24></a>[TOC] 这是目录
+</span><span id=__span-0-25><a id=__codelineno-0-25 name=__codelineno-0-25 href=#__codelineno-0-25></a>
+</span><span id=__span-0-26><a id=__codelineno-0-26 name=__codelineno-0-26 href=#__codelineno-0-26></a><span class=gu>目录</span>
+</span><span id=__span-0-27><a id=__codelineno-0-27 name=__codelineno-0-27 href=#__codelineno-0-27></a><span class=gu>---</span>
+</span><span id=__span-0-28><a id=__codelineno-0-28 name=__codelineno-0-28 href=#__codelineno-0-28></a>toc:
+</span><span id=__span-0-29><a id=__codelineno-0-29 name=__codelineno-0-29 href=#__codelineno-0-29></a>  depth_from: 1
+</span><span id=__span-0-30><a id=__codelineno-0-30 name=__codelineno-0-30 href=#__codelineno-0-30></a>  depth_to: 6
+</span><span id=__span-0-31><a id=__codelineno-0-31 name=__codelineno-0-31 href=#__codelineno-0-31></a><span class=gu>  ordered: false</span>
+</span><span id=__span-0-32><a id=__codelineno-0-32 name=__codelineno-0-32 href=#__codelineno-0-32></a><span class=gu>---</span>
+</span></code></pre></div></li> <li><mark>print</mark></li> <li>这是无序列表标题1</li> <li>这是无序列表标题2</li> <li> <p>这是无序列表标题3</p> </li> <li class=task-list-item> <p><label class=task-list-control><input type=checkbox disabled><span class=task-list-indicator></span></label> 这是未完成任务列表标题1</p> </li> <li class=task-list-item><label class=task-list-control><input type=checkbox disabled><span class=task-list-indicator></span></label> 这是未完成任务列表标题2</li> <li class=task-list-item> <p><label class=task-list-control><input type=checkbox disabled><span class=task-list-indicator></span></label> 这是未完成任务列表标题3</p> </li> <li class=task-list-item> <p><label class=task-list-control><input type=checkbox disabled checked><span class=task-list-indicator></span></label> 这是已完成列表标题1</p> </li> <li class=task-list-item><label class=task-list-control><input type=checkbox disabled checked><span class=task-list-indicator></span></label> 这是已完成列表标题2</li> <li class=task-list-item> <p><label class=task-list-control><input type=checkbox disabled checked><span class=task-list-indicator></span></label> 这是已完成列表标题3</p> </li> <li> <p>这是有序标题1</p> </li> <li>这是有序标题2</li> <li>这是有序标题3</li> </ul> <h4 id=22>2.2. 文字表述<a class=headerlink href=#22 title="Permanent link">&para;</a></h4> <ul> <li> <p><mark>code</mark> <div class="language-md highlight"><pre><span></span><code><span id=__span-1-1><a id=__codelineno-1-1 name=__codelineno-1-1 href=#__codelineno-1-1></a><span class=ge>*这会是 斜体 的文字*</span>
+</span><span id=__span-1-2><a id=__codelineno-1-2 name=__codelineno-1-2 href=#__codelineno-1-2></a><span class=ge>_这会是 斜体 的文字_</span>
+</span><span id=__span-1-3><a id=__codelineno-1-3 name=__codelineno-1-3 href=#__codelineno-1-3></a>
+</span><span id=__span-1-4><a id=__codelineno-1-4 name=__codelineno-1-4 href=#__codelineno-1-4></a><span class=gs>**这会是 粗体 的文字**</span>
+</span><span id=__span-1-5><a id=__codelineno-1-5 name=__codelineno-1-5 href=#__codelineno-1-5></a><span class=gs>__这会是 粗体 的文字__</span>
+</span><span id=__span-1-6><a id=__codelineno-1-6 name=__codelineno-1-6 href=#__codelineno-1-6></a>
+</span><span id=__span-1-7><a id=__codelineno-1-7 name=__codelineno-1-7 href=#__codelineno-1-7></a><span class=ge>_你也 **组合** 这些符号_</span>
+</span><span id=__span-1-8><a id=__codelineno-1-8 name=__codelineno-1-8 href=#__codelineno-1-8></a>
+</span><span id=__span-1-9><a id=__codelineno-1-9 name=__codelineno-1-9 href=#__codelineno-1-9></a><span class=gd>~~这个文字将会被横线删除~~</span>
+</span><span id=__span-1-10><a id=__codelineno-1-10 name=__codelineno-1-10 href=#__codelineno-1-10></a>
+</span><span id=__span-1-11><a id=__codelineno-1-11 name=__codelineno-1-11 href=#__codelineno-1-11></a>==高亮文字==
+</span><span id=__span-1-12><a id=__codelineno-1-12 name=__codelineno-1-12 href=#__codelineno-1-12></a>
+</span><span id=__span-1-13><a id=__codelineno-1-13 name=__codelineno-1-13 href=#__codelineno-1-13></a>30^上标^
+</span><span id=__span-1-14><a id=__codelineno-1-14 name=__codelineno-1-14 href=#__codelineno-1-14></a>H~下标~O
+</span><span id=__span-1-15><a id=__codelineno-1-15 name=__codelineno-1-15 href=#__codelineno-1-15></a>
+</span><span id=__span-1-16><a id=__codelineno-1-16 name=__codelineno-1-16 href=#__codelineno-1-16></a><span class=k>&gt; </span><span class=ge>这是一个注释</span>
+</span><span id=__span-1-17><a id=__codelineno-1-17 name=__codelineno-1-17 href=#__codelineno-1-17></a>
+</span><span id=__span-1-18><a id=__codelineno-1-18 name=__codelineno-1-18 href=#__codelineno-1-18></a><span class=sb>`代码块`</span>
+</span><span id=__span-1-19><a id=__codelineno-1-19 name=__codelineno-1-19 href=#__codelineno-1-19></a>
+</span><span id=__span-1-20><a id=__codelineno-1-20 name=__codelineno-1-20 href=#__codelineno-1-20></a>\`\`\`
+</span><span id=__span-1-21><a id=__codelineno-1-21 name=__codelineno-1-21 href=#__codelineno-1-21></a><span class=gh>#include &lt;stdio.h&gt;</span>
+</span><span id=__span-1-22><a id=__codelineno-1-22 name=__codelineno-1-22 href=#__codelineno-1-22></a>//代码块
+</span><span id=__span-1-23><a id=__codelineno-1-23 name=__codelineno-1-23 href=#__codelineno-1-23></a>\`\`\`
+</span><span id=__span-1-24><a id=__codelineno-1-24 name=__codelineno-1-24 href=#__codelineno-1-24></a>
+</span><span id=__span-1-25><a id=__codelineno-1-25 name=__codelineno-1-25 href=#__codelineno-1-25></a>\`\`\`{.line-numbers}
+</span><span id=__span-1-26><a id=__codelineno-1-26 name=__codelineno-1-26 href=#__codelineno-1-26></a><span class=gh>#include &lt;stdio.h&gt;</span>
+</span><span id=__span-1-27><a id=__codelineno-1-27 name=__codelineno-1-27 href=#__codelineno-1-27></a>//代码块显示行数
+</span><span id=__span-1-28><a id=__codelineno-1-28 name=__codelineno-1-28 href=#__codelineno-1-28></a>\`\`\`
+</span><span id=__span-1-29><a id=__codelineno-1-29 name=__codelineno-1-29 href=#__codelineno-1-29></a>
+</span><span id=__span-1-30><a id=__codelineno-1-30 name=__codelineno-1-30 href=#__codelineno-1-30></a>\`\`\`c {highlight=[1-10,15,20-22]}
+</span><span id=__span-1-31><a id=__codelineno-1-31 name=__codelineno-1-31 href=#__codelineno-1-31></a>/******************************************************************************
+</span><span id=__span-1-32><a id=__codelineno-1-32 name=__codelineno-1-32 href=#__codelineno-1-32></a><span class=w> </span><span class=k>*</span><span class=w> </span>Name:    CRC-8               x8+x2+x+1
+</span><span id=__span-1-33><a id=__codelineno-1-33 name=__codelineno-1-33 href=#__codelineno-1-33></a><span class=w> </span><span class=k>*</span><span class=w> </span>Poly:    0x07
+</span><span id=__span-1-34><a id=__codelineno-1-34 name=__codelineno-1-34 href=#__codelineno-1-34></a><span class=w> </span><span class=k>*</span><span class=w> </span>Init:    0x00
+</span><span id=__span-1-35><a id=__codelineno-1-35 name=__codelineno-1-35 href=#__codelineno-1-35></a><span class=w> </span><span class=k>*</span><span class=w> </span>Refin:   False
+</span><span id=__span-1-36><a id=__codelineno-1-36 name=__codelineno-1-36 href=#__codelineno-1-36></a><span class=w> </span><span class=k>*</span><span class=w> </span>Refout:  False
+</span><span id=__span-1-37><a id=__codelineno-1-37 name=__codelineno-1-37 href=#__codelineno-1-37></a><span class=w> </span><span class=k>*</span><span class=w> </span>Xorout:  0x00
+</span><span id=__span-1-38><a id=__codelineno-1-38 name=__codelineno-1-38 href=#__codelineno-1-38></a><span class=w> </span><span class=k>*</span><span class=w> </span>Note: 高亮指定代码行数
+</span><span id=__span-1-39><a id=__codelineno-1-39 name=__codelineno-1-39 href=#__codelineno-1-39></a> *****************************************************************************/
+</span><span id=__span-1-40><a id=__codelineno-1-40 name=__codelineno-1-40 href=#__codelineno-1-40></a>uint8_t crc8(uint8_t *data, uint32_t length)
+</span><span id=__span-1-41><a id=__codelineno-1-41 name=__codelineno-1-41 href=#__codelineno-1-41></a>{
+</span><span id=__span-1-42><a id=__codelineno-1-42 name=__codelineno-1-42 href=#__codelineno-1-42></a>    uint8_t i;
+</span><span id=__span-1-43><a id=__codelineno-1-43 name=__codelineno-1-43 href=#__codelineno-1-43></a>    uint8_t crc = 0;        // Initial value
+</span><span id=__span-1-44><a id=__codelineno-1-44 name=__codelineno-1-44 href=#__codelineno-1-44></a>    while(length--)
+</span><span id=__span-1-45><a id=__codelineno-1-45 name=__codelineno-1-45 href=#__codelineno-1-45></a>    {
+</span><span id=__span-1-46><a id=__codelineno-1-46 name=__codelineno-1-46 href=#__codelineno-1-46></a>        crc ^= <span class=ge>*data++;        // crc ^= *</span>data; data++;
+</span><span id=__span-1-47><a id=__codelineno-1-47 name=__codelineno-1-47 href=#__codelineno-1-47></a>        for ( i = 0; i &lt; 8; i++ )
+</span><span id=__span-1-48><a id=__codelineno-1-48 name=__codelineno-1-48 href=#__codelineno-1-48></a>        {
+</span><span id=__span-1-49><a id=__codelineno-1-49 name=__codelineno-1-49 href=#__codelineno-1-49></a>            if ( crc &amp; 0x80 )
+</span><span id=__span-1-50><a id=__codelineno-1-50 name=__codelineno-1-50 href=#__codelineno-1-50></a>                crc = (crc &lt;&lt; 1) ^ 0x07;
+</span><span id=__span-1-51><a id=__codelineno-1-51 name=__codelineno-1-51 href=#__codelineno-1-51></a>            else
+</span><span id=__span-1-52><a id=__codelineno-1-52 name=__codelineno-1-52 href=#__codelineno-1-52></a>                crc &lt;&lt;= 1;
+</span><span id=__span-1-53><a id=__codelineno-1-53 name=__codelineno-1-53 href=#__codelineno-1-53></a>        }
+</span><span id=__span-1-54><a id=__codelineno-1-54 name=__codelineno-1-54 href=#__codelineno-1-54></a>    }
+</span><span id=__span-1-55><a id=__codelineno-1-55 name=__codelineno-1-55 href=#__codelineno-1-55></a>    return crc;
+</span><span id=__span-1-56><a id=__codelineno-1-56 name=__codelineno-1-56 href=#__codelineno-1-56></a>}
+</span><span id=__span-1-57><a id=__codelineno-1-57 name=__codelineno-1-57 href=#__codelineno-1-57></a>\`\`\`
+</span><span id=__span-1-58><a id=__codelineno-1-58 name=__codelineno-1-58 href=#__codelineno-1-58></a>
+</span><span id=__span-1-59><a id=__codelineno-1-59 name=__codelineno-1-59 href=#__codelineno-1-59></a>\`\`\`这是转义符
+</span><span id=__span-1-60><a id=__codelineno-1-60 name=__codelineno-1-60 href=#__codelineno-1-60></a>
+</span><span id=__span-1-61><a id=__codelineno-1-61 name=__codelineno-1-61 href=#__codelineno-1-61></a>脚注1[^1]
+</span><span id=__span-1-62><a id=__codelineno-1-62 name=__codelineno-1-62 href=#__codelineno-1-62></a>脚注1[^2]
+</span><span id=__span-1-63><a id=__codelineno-1-63 name=__codelineno-1-63 href=#__codelineno-1-63></a>[<span class=nl>^1</span>]: <span class=na>Hi! 脚注1</span>
+</span><span id=__span-1-64><a id=__codelineno-1-64 name=__codelineno-1-64 href=#__codelineno-1-64></a>[<span class=nl>^2</span>]: <span class=na>Hi! 脚注2</span>
+</span><span id=__span-1-65><a id=__codelineno-1-65 name=__codelineno-1-65 href=#__codelineno-1-65></a>
+</span><span id=__span-1-66><a id=__codelineno-1-66 name=__codelineno-1-66 href=#__codelineno-1-66></a>*[简述]: 一大堆备注缩略成简述
+</span><span id=__span-1-67><a id=__codelineno-1-67 name=__codelineno-1-67 href=#__codelineno-1-67></a>这是一个 简述 引用
+</span><span id=__span-1-68><a id=__codelineno-1-68 name=__codelineno-1-68 href=#__codelineno-1-68></a>
+</span><span id=__span-1-69><a id=__codelineno-1-69 name=__codelineno-1-69 href=#__codelineno-1-69></a>!!! note
+</span><span id=__span-1-70><a id=__codelineno-1-70 name=__codelineno-1-70 href=#__codelineno-1-70></a>    这是一条警告
+</span><span id=__span-1-71><a id=__codelineno-1-71 name=__codelineno-1-71 href=#__codelineno-1-71></a>
+</span><span id=__span-1-72><a id=__codelineno-1-72 name=__codelineno-1-72 href=#__codelineno-1-72></a>不缩进
+</span><span id=__span-1-73><a id=__codelineno-1-73 name=__codelineno-1-73 href=#__codelineno-1-73></a>&amp;nbsp;&amp;nbsp;&amp;nbsp;小缩进
+</span><span id=__span-1-74><a id=__codelineno-1-74 name=__codelineno-1-74 href=#__codelineno-1-74></a>&amp;emsp;大缩进
+</span></code></pre></div></p> </li> <li> <p><mark>print</mark> <em>这会是 斜体 的文字</em> <em>这会是 斜体 的文字</em></p> <p><strong>这会是 粗体 的文字</strong> <strong>这会是 粗体 的文字</strong></p> <p><em>你也 <strong>组合</strong> 这些符号</em></p> <p><del>这个文字将会被横线删除</del></p> <p><mark>高亮文字</mark></p> <p>30<sup>上标</sup> H<sub>下标</sub>O</p> <p><code>代码块</code></p> <div class="language-c highlight"><pre><span></span><code><span id=__span-2-1><a id=__codelineno-2-1 name=__codelineno-2-1 href=#__codelineno-2-1></a><span class=cp>#include</span><span class=w> </span><span class=cpf>&lt;stdio.h&gt;</span>
+</span><span id=__span-2-2><a id=__codelineno-2-2 name=__codelineno-2-2 href=#__codelineno-2-2></a><span class=c1>//代码块</span>
+</span></code></pre></div> <p>```c{.line-numbers}</p> <h1 id=include>include <stdio.h><a class=headerlink href=#include title="Permanent link">&para;</a></h1> <p>//代码块显示行数 <div class="language-text highlight"><pre><span></span><code><span id=__span-3-1><a id=__codelineno-3-1 name=__codelineno-3-1 href=#__codelineno-3-1></a>```c {highlight=[1-10,15,20-22]}
+</span><span id=__span-3-2><a id=__codelineno-3-2 name=__codelineno-3-2 href=#__codelineno-3-2></a>  /******************************************************************************
+</span><span id=__span-3-3><a id=__codelineno-3-3 name=__codelineno-3-3 href=#__codelineno-3-3></a>   * Name:    CRC-8               x8+x2+x+1
+</span><span id=__span-3-4><a id=__codelineno-3-4 name=__codelineno-3-4 href=#__codelineno-3-4></a>   * Poly:    0x07
+</span><span id=__span-3-5><a id=__codelineno-3-5 name=__codelineno-3-5 href=#__codelineno-3-5></a>   * Init:    0x00
+</span><span id=__span-3-6><a id=__codelineno-3-6 name=__codelineno-3-6 href=#__codelineno-3-6></a>   * Refin:   False
+</span><span id=__span-3-7><a id=__codelineno-3-7 name=__codelineno-3-7 href=#__codelineno-3-7></a>   * Refout:  False
+</span><span id=__span-3-8><a id=__codelineno-3-8 name=__codelineno-3-8 href=#__codelineno-3-8></a>   * Xorout:  0x00
+</span><span id=__span-3-9><a id=__codelineno-3-9 name=__codelineno-3-9 href=#__codelineno-3-9></a>   * Note: 高亮指定代码行数
+</span><span id=__span-3-10><a id=__codelineno-3-10 name=__codelineno-3-10 href=#__codelineno-3-10></a>   *****************************************************************************/
+</span><span id=__span-3-11><a id=__codelineno-3-11 name=__codelineno-3-11 href=#__codelineno-3-11></a>  uint8_t crc8(uint8_t *data, uint32_t length)
+</span><span id=__span-3-12><a id=__codelineno-3-12 name=__codelineno-3-12 href=#__codelineno-3-12></a>  {
+</span><span id=__span-3-13><a id=__codelineno-3-13 name=__codelineno-3-13 href=#__codelineno-3-13></a>      uint8_t i;
+</span><span id=__span-3-14><a id=__codelineno-3-14 name=__codelineno-3-14 href=#__codelineno-3-14></a>      uint8_t crc = 0;        // Initial value
+</span><span id=__span-3-15><a id=__codelineno-3-15 name=__codelineno-3-15 href=#__codelineno-3-15></a>      while(length--)
+</span><span id=__span-3-16><a id=__codelineno-3-16 name=__codelineno-3-16 href=#__codelineno-3-16></a>      {
+</span><span id=__span-3-17><a id=__codelineno-3-17 name=__codelineno-3-17 href=#__codelineno-3-17></a>          crc ^= *data++;        // crc ^= *data; data++;
+</span><span id=__span-3-18><a id=__codelineno-3-18 name=__codelineno-3-18 href=#__codelineno-3-18></a>          for ( i = 0; i &lt; 8; i++ )
+</span><span id=__span-3-19><a id=__codelineno-3-19 name=__codelineno-3-19 href=#__codelineno-3-19></a>          {
+</span><span id=__span-3-20><a id=__codelineno-3-20 name=__codelineno-3-20 href=#__codelineno-3-20></a>              if ( crc &amp; 0x80 )
+</span><span id=__span-3-21><a id=__codelineno-3-21 name=__codelineno-3-21 href=#__codelineno-3-21></a>                  crc = (crc &lt;&lt; 1) ^ 0x07;
+</span><span id=__span-3-22><a id=__codelineno-3-22 name=__codelineno-3-22 href=#__codelineno-3-22></a>              else
+</span><span id=__span-3-23><a id=__codelineno-3-23 name=__codelineno-3-23 href=#__codelineno-3-23></a>                  crc &lt;&lt;= 1;
+</span><span id=__span-3-24><a id=__codelineno-3-24 name=__codelineno-3-24 href=#__codelineno-3-24></a>          }
+</span><span id=__span-3-25><a id=__codelineno-3-25 name=__codelineno-3-25 href=#__codelineno-3-25></a>      }
+</span><span id=__span-3-26><a id=__codelineno-3-26 name=__codelineno-3-26 href=#__codelineno-3-26></a>      return crc;
+</span><span id=__span-3-27><a id=__codelineno-3-27 name=__codelineno-3-27 href=#__codelineno-3-27></a>  }
+</span></code></pre></div></p> <blockquote> <p>这是一个注释或引用</p> </blockquote> <p>```这是转义符</p> <p>脚注1<sup id=fnref:1><a class=footnote-ref href=#fn:1>1</a></sup> 脚注1<sup id=fnref:2><a class=footnote-ref href=#fn:2>2</a></sup></p> <p>这是一个 <abbr title=一大堆备注缩略成简述>简述</abbr> 引用</p> <div class="admonition note"> <p class=admonition-title>Note</p> </div> <p>这是一条警告</p> <p>不缩进 &nbsp;&nbsp;&nbsp;小缩进 &emsp;大缩进</p> </li> </ul> <h4 id=23>2.3. 跳转<a class=headerlink href=#23 title="Permanent link">&para;</a></h4> <ul> <li> <p><mark>code</mark> <div class="language-md highlight"><pre><span></span><code><span id=__span-4-1><a id=__codelineno-4-1 name=__codelineno-4-1 href=#__codelineno-4-1></a>[<span class=nt>这是一条链接</span>](<span class=na>https://github.com/kuanghl/kuanghl</span>)
+</span><span id=__span-4-2><a id=__codelineno-4-2 name=__codelineno-4-2 href=#__codelineno-4-2></a>![<span class=nt>这是一张嵌入图片</span>](<span class=na>https://csdnimg.cn/cdn/content-toolbar/csdn-logo_.png?v=20190924.1</span>)
+</span><span id=__span-4-3><a id=__codelineno-4-3 name=__codelineno-4-3 href=#__codelineno-4-3></a>&lt;a id=&#39;jumpid1&#39;&gt;&lt;/a&gt;
+</span><span id=__span-4-4><a id=__codelineno-4-4 name=__codelineno-4-4 href=#__codelineno-4-4></a>[<span class=nt>这是一个页内跳转</span>](<span class=na>#jumpid1</span>)
+</span></code></pre></div></p> </li> <li> <p>print <a href=https://github.com/kuanghl/kuanghl>这是一条链接</a></p> </li> </ul> <p><img alt=这是一张嵌入图片 src="https://csdnimg.cn/cdn/content-toolbar/csdn-logo_.png?v=20190924.1"></p> <p><a id=jumpid1></a> <a href=#jumpid1>这是一个页内跳转</a></p> <h4 id=24>2.4. 其他<a class=headerlink href=#24 title="Permanent link">&para;</a></h4> <ul> <li> <p><mark>code</mark> <div class="language-md highlight"><pre><span></span><code><span id=__span-5-1><a id=__codelineno-5-1 name=__codelineno-5-1 href=#__codelineno-5-1></a><span class=gh># 这是三根分割线</span>
+</span><span id=__span-5-2><a id=__codelineno-5-2 name=__codelineno-5-2 href=#__codelineno-5-2></a>---
+</span><span id=__span-5-3><a id=__codelineno-5-3 name=__codelineno-5-3 href=#__codelineno-5-3></a>***
+</span><span id=__span-5-4><a id=__codelineno-5-4 name=__codelineno-5-4 href=#__codelineno-5-4></a>___
+</span><span id=__span-5-5><a id=__codelineno-5-5 name=__codelineno-5-5 href=#__codelineno-5-5></a>
+</span><span id=__span-5-6><a id=__codelineno-5-6 name=__codelineno-5-6 href=#__codelineno-5-6></a><span class=gh># 这是一些表情符号</span>
+</span><span id=__span-5-7><a id=__codelineno-5-7 name=__codelineno-5-7 href=#__codelineno-5-7></a>||a|b|c|d|e|f|
+</span><span id=__span-5-8><a id=__codelineno-5-8 name=__codelineno-5-8 href=#__codelineno-5-8></a>|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+</span><span id=__span-5-9><a id=__codelineno-5-9 name=__codelineno-5-9 href=#__codelineno-5-9></a>|1|:punch:|:notebook:|:e-mail:|:smile:|:movie_camera:|    :camera:|
+</span><span id=__span-5-10><a id=__codelineno-5-10 name=__codelineno-5-10 href=#__codelineno-5-10></a>|2|:fa-car:|:telephone_receiver:|:phone:|:heart:|:alarm_clock:|:loop:|
+</span><span id=__span-5-11><a id=__codelineno-5-11 name=__codelineno-5-11 href=#__codelineno-5-11></a>|3|:+1:|:books:|:email:|:-1:|:bulb:|:hammer:|
+</span><span id=__span-5-12><a id=__codelineno-5-12 name=__codelineno-5-12 href=#__codelineno-5-12></a>|4|:rocket:|:book:|:envelope:|:sunny:|:mag_right:|    :chart_with_upwards_trend:|
+</span><span id=__span-5-13><a id=__codelineno-5-13 name=__codelineno-5-13 href=#__codelineno-5-13></a>|5|:cloud:|:bar_chart:|:wind_chime:|:hibiscus:|:paperclip:|   :ghost:|
+</span><span id=__span-5-14><a id=__codelineno-5-14 name=__codelineno-5-14 href=#__codelineno-5-14></a>|6|:bug:|:date:|:balloon:|:beers:|:guitar:|:headphones:|
+</span><span id=__span-5-15><a id=__codelineno-5-15 name=__codelineno-5-15 href=#__codelineno-5-15></a>|7|:rice:|:guitar:|:mortar_board:|:house:|:mount_fuji:|   :office:|
+</span><span id=__span-5-16><a id=__codelineno-5-16 name=__codelineno-5-16 href=#__codelineno-5-16></a>|8|:rocket:|:school:|:cupid:|:notes:|:shit:|:feet:|
+</span><span id=__span-5-17><a id=__codelineno-5-17 name=__codelineno-5-17 href=#__codelineno-5-17></a>|9|:speech_balloon:| 
+</span><span id=__span-5-18><a id=__codelineno-5-18 name=__codelineno-5-18 href=#__codelineno-5-18></a>
+</span><span id=__span-5-19><a id=__codelineno-5-19 name=__codelineno-5-19 href=#__codelineno-5-19></a>:smile: :flushed: :sweat: :sob: :joy:
+</span><span id=__span-5-20><a id=__codelineno-5-20 name=__codelineno-5-20 href=#__codelineno-5-20></a>:+1: :ok_hand: :point_down: :clap: :muscle: :pray:
+</span><span id=__span-5-21><a id=__codelineno-5-21 name=__codelineno-5-21 href=#__codelineno-5-21></a>:heart: :fire: :boom: :star2: :shit: :zzz:    
+</span><span id=__span-5-22><a id=__codelineno-5-22 name=__codelineno-5-22 href=#__codelineno-5-22></a>
+</span><span id=__span-5-23><a id=__codelineno-5-23 name=__codelineno-5-23 href=#__codelineno-5-23></a><span class=gh># 这是表格(合并表格只能使用HTML)</span>
+</span><span id=__span-5-24><a id=__codelineno-5-24 name=__codelineno-5-24 href=#__codelineno-5-24></a>| 姓名 | 年龄 |  爱好 |
+</span><span id=__span-5-25><a id=__codelineno-5-25 name=__codelineno-5-25 href=#__codelineno-5-25></a>| :-- | :-- | -----: |
+</span><span id=__span-5-26><a id=__codelineno-5-26 name=__codelineno-5-26 href=#__codelineno-5-26></a>| 小明 | 9 | 篮球、羽毛球、乒乓球 |
+</span><span id=__span-5-27><a id=__codelineno-5-27 name=__codelineno-5-27 href=#__codelineno-5-27></a>| 小刚 | 10 | 篮球 &lt;br&gt; 足球 |
+</span><span id=__span-5-28><a id=__codelineno-5-28 name=__codelineno-5-28 href=#__codelineno-5-28></a>
+</span><span id=__span-5-29><a id=__codelineno-5-29 name=__codelineno-5-29 href=#__codelineno-5-29></a><span class=gh># 这是一个固定代码块解析格式</span>
+</span><span id=__span-5-30><a id=__codelineno-5-30 name=__codelineno-5-30 href=#__codelineno-5-30></a>s名词 1
+</span><span id=__span-5-31><a id=__codelineno-5-31 name=__codelineno-5-31 href=#__codelineno-5-31></a>:   定义 1(左侧有一个可见的冒号和四个不可见的空格)
+</span><span id=__span-5-32><a id=__codelineno-5-32 name=__codelineno-5-32 href=#__codelineno-5-32></a>    定义 2
+</span><span id=__span-5-33><a id=__codelineno-5-33 name=__codelineno-5-33 href=#__codelineno-5-33></a>    定义 3
+</span><span id=__span-5-34><a id=__codelineno-5-34 name=__codelineno-5-34 href=#__codelineno-5-34></a>
+</span><span id=__span-5-35><a id=__codelineno-5-35 name=__codelineno-5-35 href=#__codelineno-5-35></a>      <span class=ni>#include</span> &lt;stdio.h&gt;
+</span><span id=__span-5-36><a id=__codelineno-5-36 name=__codelineno-5-36 href=#__codelineno-5-36></a>      // 这是代码块(左侧有八个不可见的空格)
+</span><span id=__span-5-37><a id=__codelineno-5-37 name=__codelineno-5-37 href=#__codelineno-5-37></a>
+</span><span id=__span-5-38><a id=__codelineno-5-38 name=__codelineno-5-38 href=#__codelineno-5-38></a><span class=gh># 导入文件(需要点击预览界面的右上角刷新预览来同步变更导入文件的改变)</span>
+</span><span id=__span-5-39><a id=__codelineno-5-39 name=__codelineno-5-39 href=#__codelineno-5-39></a><span class=ni>@import</span> &quot;../json/test.md&quot;
+</span><span id=__span-5-40><a id=__codelineno-5-40 name=__codelineno-5-40 href=#__codelineno-5-40></a><span class=ni>@import</span> &quot;../json/test.js&quot;
+</span><span id=__span-5-41><a id=__codelineno-5-41 name=__codelineno-5-41 href=#__codelineno-5-41></a><span class=ni>@import</span> &quot;../json/test.csv
+</span><span id=__span-5-42><a id=__codelineno-5-42 name=__codelineno-5-42 href=#__codelineno-5-42></a><span class=ni>@import</span> &quot;../json/test.json&quot;
+</span><span id=__span-5-43><a id=__codelineno-5-43 name=__codelineno-5-43 href=#__codelineno-5-43></a><span class=ni>@import</span> &quot;../json/test.pdf&quot;
+</span><span id=__span-5-44><a id=__codelineno-5-44 name=__codelineno-5-44 href=#__codelineno-5-44></a>
+</span><span id=__span-5-45><a id=__codelineno-5-45 name=__codelineno-5-45 href=#__codelineno-5-45></a><span class=gh># 这是一个导出pdf分页的标志</span>
+</span><span id=__span-5-46><a id=__codelineno-5-46 name=__codelineno-5-46 href=#__codelineno-5-46></a>&lt;div STYLE=&quot;page-break-after: always;&quot;&gt;&lt;/div&gt;
+</span></code></pre></div></p> </li> <li> <p><mark>print</mark></p> </li> </ul> <hr> <hr> <hr> <table> <thead> <tr> <th style="text-align: center;"></th> <th style="text-align: center;">a</th> <th style="text-align: center;">b</th> <th style="text-align: center;">c</th> <th style="text-align: center;">d</th> <th style="text-align: center;">e</th> <th style="text-align: center;">f</th> </tr> </thead> <tbody> <tr> <td style="text-align: center;">1</td> <td style="text-align: center;"><img alt=👊 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44a.svg title=:punch:></td> <td style="text-align: center;"><img alt=📓 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d3.svg title=:notebook:></td> <td style="text-align: center;"><img alt=📧 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4e7.svg title=:e-mail:></td> <td style="text-align: center;"><img alt=😄 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg title=:smile:></td> <td style="text-align: center;"><img alt=🎥 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a5.svg title=:movie_camera:></td> <td style="text-align: center;"><img alt=📷 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4f7.svg title=:camera:></td> </tr> <tr> <td style="text-align: center;">2</td> <td style="text-align: center;">:fa-car:</td> <td style="text-align: center;"><img alt=📞 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4de.svg title=:telephone_receiver:></td> <td style="text-align: center;">:phone:</td> <td style="text-align: center;"><img alt=❤ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg title=:heart:></td> <td style="text-align: center;"><img alt=⏰ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/23f0.svg title=:alarm_clock:></td> <td style="text-align: center;"><img alt=➿ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/27bf.svg title=:loop:></td> </tr> <tr> <td style="text-align: center;">3</td> <td style="text-align: center;"><img alt=👍 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44d.svg title=:+1:></td> <td style="text-align: center;"><img alt=📚 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4da.svg title=:books:></td> <td style="text-align: center;"><img alt=📧 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4e7.svg title=:email:></td> <td style="text-align: center;"><img alt=👎 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44e.svg title=:-1:></td> <td style="text-align: center;"><img alt=💡 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a1.svg title=:bulb:></td> <td style="text-align: center;"><img alt=🔨 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f528.svg title=:hammer:></td> </tr> <tr> <td style="text-align: center;">4</td> <td style="text-align: center;"><img alt=🚀 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f680.svg title=:rocket:></td> <td style="text-align: center;"><img alt=📖 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4d6.svg title=:book:></td> <td style="text-align: center;"><img alt=✉ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2709.svg title=:envelope:></td> <td style="text-align: center;"><img alt=☀ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2600.svg title=:sunny:></td> <td style="text-align: center;"><img alt=🔎 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f50e.svg title=:mag_right:></td> <td style="text-align: center;"><img alt=📈 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c8.svg title=:chart_with_upwards_trend:></td> </tr> <tr> <td style="text-align: center;">5</td> <td style="text-align: center;"><img alt=☁ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2601.svg title=:cloud:></td> <td style="text-align: center;"><img alt=📊 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4ca.svg title=:bar_chart:></td> <td style="text-align: center;"><img alt=🎐 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f390.svg title=:wind_chime:></td> <td style="text-align: center;"><img alt=🌺 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f33a.svg title=:hibiscus:></td> <td style="text-align: center;"><img alt=📎 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4ce.svg title=:paperclip:></td> <td style="text-align: center;"><img alt=👻 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f47b.svg title=:ghost:></td> </tr> <tr> <td style="text-align: center;">6</td> <td style="text-align: center;"><img alt=🐛 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f41b.svg title=:bug:></td> <td style="text-align: center;"><img alt=📅 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4c5.svg title=:date:></td> <td style="text-align: center;"><img alt=🎈 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f388.svg title=:balloon:></td> <td style="text-align: center;"><img alt=🍻 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f37b.svg title=:beers:></td> <td style="text-align: center;"><img alt=🎸 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3b8.svg title=:guitar:></td> <td style="text-align: center;"><img alt=🎧 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3a7.svg title=:headphones:></td> </tr> <tr> <td style="text-align: center;">7</td> <td style="text-align: center;"><img alt=🍚 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f35a.svg title=:rice:></td> <td style="text-align: center;"><img alt=🎸 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3b8.svg title=:guitar:></td> <td style="text-align: center;"><img alt=🎓 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f393.svg title=:mortar_board:></td> <td style="text-align: center;"><img alt=🏠 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3e0.svg title=:house:></td> <td style="text-align: center;"><img alt=🗻 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f5fb.svg title=:mount_fuji:></td> <td style="text-align: center;"><img alt=🏢 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3e2.svg title=:office:></td> </tr> <tr> <td style="text-align: center;">8</td> <td style="text-align: center;"><img alt=🚀 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f680.svg title=:rocket:></td> <td style="text-align: center;"><img alt=🏫 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3eb.svg title=:school:></td> <td style="text-align: center;"><img alt=💘 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f498.svg title=:cupid:></td> <td style="text-align: center;"><img alt=🎶 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f3b6.svg title=:notes:></td> <td style="text-align: center;"><img alt=💩 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a9.svg title=:shit:></td> <td style="text-align: center;"><img alt=🐾 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f43e.svg title=:feet:></td> </tr> <tr> <td style="text-align: center;">9</td> <td style="text-align: center;"><img alt=💬 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4ac.svg title=:speech_balloon:></td> <td style="text-align: center;"></td> <td style="text-align: center;"></td> <td style="text-align: center;"></td> <td style="text-align: center;"></td> <td style="text-align: center;"></td> </tr> </tbody> </table> <p><img alt=😄 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f604.svg title=:smile:> <img alt=😳 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f633.svg title=:flushed:> <img alt=😓 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f613.svg title=:sweat:> <img alt=😭 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f62d.svg title=:sob:> <img alt=😂 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f602.svg title=:joy:> <img alt=👍 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44d.svg title=:+1:> <img alt=👌 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44c.svg title=:ok_hand:> <img alt=👇 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f447.svg title=:point_down:> <img alt=👏 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f44f.svg title=:clap:> <img alt=💪 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4aa.svg title=:muscle:> <img alt=🙏 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f64f.svg title=:pray:> <img alt=❤ class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/2764.svg title=:heart:> <img alt=🔥 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f525.svg title=:fire:> <img alt=💥 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a5.svg title=:boom:> <img alt=🌟 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f31f.svg title=:star2:> <img alt=💩 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a9.svg title=:shit:> <img alt=💤 class=twemoji src=https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f4a4.svg title=:zzz:> </p> <table> <thead> <tr> <th style="text-align: left;">姓名</th> <th style="text-align: left;">年龄</th> <th style="text-align: right;">爱好</th> </tr> </thead> <tbody> <tr> <td style="text-align: left;">小明</td> <td style="text-align: left;">9</td> <td style="text-align: right;">篮球、羽毛球、乒乓球</td> </tr> <tr> <td style="text-align: left;">小刚</td> <td style="text-align: left;">10</td> <td style="text-align: right;">篮球 <br> 足球</td> </tr> </tbody> </table> <dl> <dt>名词 1</dt> <dd>定义 1(左侧有一个可见的冒号和四个不可见的空格) 定义 2 定义 3<div class="language-text highlight"><pre><span></span><code>#include &lt;stdio.h&gt;
+// 这是代码块(左侧有八个不可见的空格)
+</code></pre></div> </dd> </dl> <p><a class="magiclink magiclink-github magiclink-mention" href=https://github.com/import title="GitHub User: import">@import</a> "../json/test.md" <a class="magiclink magiclink-github magiclink-mention" href=https://github.com/import title="GitHub User: import">@import</a> "../json/test.csv"</p> <h3 id=3>3. 基本公式<a class=headerlink href=#3 title="Permanent link">&para;</a></h3> <h4 id=31-katex>3.1. KaTex<a class=headerlink href=#31-katex title="Permanent link">&para;</a></h4> <h4 id=32-mathjax>3.2. MathJax<a class=headerlink href=#32-mathjax title="Permanent link">&para;</a></h4> <h4 id=33-latex>3.3. Latex<a class=headerlink href=#33-latex title="Permanent link">&para;</a></h4> <div class=arithmatex>\[ \begin{array} {cll} \hline 序号 &amp; 人名 &amp; 角色 \\ \hline 1 &amp; Alice &amp; 协议中的第一个参与者 \\ 2 &amp; Bob &amp; 协议中的第二个参与者 \\ 3 &amp; Trent &amp; 仲裁者 \\ 4 &amp; Eve &amp; 窃听者 \\ \hline \end{array} \]</div> <p><code>$</code> 表示行内公式,如最简单的质能方程<span class=arithmatex>\(E=mc^2\)</span>展示 <code>$$</code> 表示整行公式：</p> <div class=arithmatex>\[\sum_{i=1}^n a_i=0\]</div> <div class=arithmatex>\[f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 \]</div> <div class=arithmatex>\[\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k}\]</div> <p><span class=arithmatex>\(\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.\)</span></p> <div class=arithmatex>\[\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.\]</div> <div class=arithmatex>\[\binom{n+1}{2k} \]</div> <div class=arithmatex>\[ \color{#FF0000}{红} \color{#FF7D00}{橙} \color{#FF0000}{黄} \color{#00FF00}{绿} \color{#0000FF}{蓝} \color{#00FFFF}{靛} \color{#FF00FF}{紫} \]</div> <h4 id=34>3.4. 代码块渲染<a class=headerlink href=#34 title="Permanent link">&para;</a></h4> <ul> <li>Code Chunk(需要配置略)</li> </ul> <h3 id=4>4. 基本绘图<a class=headerlink href=#4 title="Permanent link">&para;</a></h3> <h4 id=41-mermaidflowchartganttsequencediagramclassdiagramstatediagram-v2journeyc4context>4.1. <a href=https://github.com/mermaid-js/mermaid.git>Mermaid(flowchart/gantt/sequenceDiagram/classDiagram/stateDiagram-v2/journey/C4Context)</a><a class=headerlink href=#41-mermaidflowchartganttsequencediagramclassdiagramstatediagram-v2journeyc4context title="Permanent link">&para;</a></h4> <pre class=mermaid><code>flowchart LR
+
+A[Hard] --&gt;|Text| B(Round)
+B --&gt; C{Decision}
+C --&gt;|One| D[Result 1]
+C --&gt;|Two| E[Result 2]</code></pre> <pre class=mermaid><code>gantt
+    title 项目开发流程
+    section 项目确定
+        需求输入    :done, a1, 2016-06-21, 5d
+        需求分析    :active, after a1, 5d
+        可行性报告  :crit, 7d
+        概念验证    : 5d
+    section 项目实施
+        概要设计  :crit, active, 2016-07-11  , 5d
+        详细设计  :crit, done ,2016-07-16, 5d
+        编码      :2016-07-18, 4d
+        测试      :2016-07-22, 5d
+    section 发布验收
+        发布: 3d
+        验收: 3d</code></pre> <pre class=mermaid><code>gantt
+    title Git Issues - days since last update
+    dateFormat  X
+    axisFormat %s
+
+    section Issue19062
+    71   : 0, 71
+    section Issue19401
+    36   : 0, 36
+    section Issue193
+    34   : 0, 34
+    section Issue7441
+    9    : 0, 9
+    section Issue1300
+    5    : 0, 5</code></pre> <pre class=mermaid><code>sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!</code></pre> <pre class=mermaid><code>classDiagram
+Class01 &lt;|-- AveryLongClass : Cool
+&lt;&lt;Interface&gt;&gt; Class01
+Class09 --&gt; C2 : Where am I?
+Class09 --* C3
+Class09 --|&gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &lt;&lt;service&gt;&gt;
+  int id
+  size()
+}</code></pre> <pre class=mermaid><code>stateDiagram-v2
+[*] --&gt; Still
+Still --&gt; [*]
+Still --&gt; Moving
+Moving --&gt; Still
+Moving --&gt; Crash
+Crash --&gt; [*]</code></pre> <pre class=mermaid><code>pie
+"Dogs" : 386
+"Cats" : 85.9
+"Rats" : 15</code></pre> <pre class=mermaid><code>journey
+  title My working day
+  section Go to work
+    Make tea: 5: Me
+    Go upstairs: 3: Me
+    Do work: 1: Me, Cat
+  section Go home
+    Go downstairs: 5: Me
+    Sit down: 3: Me</code></pre> <pre class=mermaid><code>C4Context
+title System Context diagram for Internet Banking System
+
+Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
+Person(customerB, "Banking Customer B")
+Person_Ext(customerC, "Banking Customer C")
+System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
+
+Person(customerD, "Banking Customer D", "A customer of the bank, &lt;br/&gt; with personal bank accounts.")
+
+Enterprise_Boundary(b1, "BankBoundary") {
+
+  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
+
+  System_Boundary(b2, "BankBoundary2") {
+    System(SystemA, "Banking System A")
+    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
+  }
+
+  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
+
+  Boundary(b3, "BankBoundary3", "boundary") {
+    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
+    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
+  }
+}
+
+BiRel(customerA, SystemAA, "Uses")
+BiRel(SystemAA, SystemE, "Uses")
+Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
+Rel(SystemC, customerA, "Sends e-mails to")</code></pre> <h4 id=42-wavedromassignregsignal>4.2. <a href=https://github.com/wavedrom/wavedrom.git>wavedrom(assign/reg/signal)</a><a class=headerlink href=#42-wavedromassignregsignal title="Permanent link">&para;</a></h4> <div class="language-text highlight"><pre><span></span><code><span id=__span-6-1><a id=__codelineno-6-1 name=__codelineno-6-1 href=#__codelineno-6-1></a>{ assign:[
+</span><span id=__span-6-2><a id=__codelineno-6-2 name=__codelineno-6-2 href=#__codelineno-6-2></a>  [&quot;z&quot;, [&quot;~&amp;&quot;,
+</span><span id=__span-6-3><a id=__codelineno-6-3 name=__codelineno-6-3 href=#__codelineno-6-3></a>    [&quot;~^&quot;, [&quot;~&quot;, &quot;p0&quot;], [&quot;~&quot;, &quot;q0&quot;]],
+</span><span id=__span-6-4><a id=__codelineno-6-4 name=__codelineno-6-4 href=#__codelineno-6-4></a>    [&quot;~^&quot;, [&quot;~&quot;, &quot;p1&quot;], [&quot;~&quot;, &quot;q1&quot;]],
+</span><span id=__span-6-5><a id=__codelineno-6-5 name=__codelineno-6-5 href=#__codelineno-6-5></a>    [&quot;~^&quot;, [&quot;~&quot;, &quot;p2&quot;], [&quot;~&quot;, &quot;q2&quot;]],
+</span><span id=__span-6-6><a id=__codelineno-6-6 name=__codelineno-6-6 href=#__codelineno-6-6></a>    &quot;...&quot;,
+</span><span id=__span-6-7><a id=__codelineno-6-7 name=__codelineno-6-7 href=#__codelineno-6-7></a>    [&quot;~^&quot;, [&quot;~&quot;, &quot;p7&quot;], [&quot;~&quot;, &quot;q7&quot;]],
+</span><span id=__span-6-8><a id=__codelineno-6-8 name=__codelineno-6-8 href=#__codelineno-6-8></a>    [&quot;~&quot;,&quot;~en&quot;]
+</span><span id=__span-6-9><a id=__codelineno-6-9 name=__codelineno-6-9 href=#__codelineno-6-9></a>  ]]
+</span><span id=__span-6-10><a id=__codelineno-6-10 name=__codelineno-6-10 href=#__codelineno-6-10></a>]}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-7-1><a id=__codelineno-7-1 name=__codelineno-7-1 href=#__codelineno-7-1></a>{reg:[
+</span><span id=__span-7-2><a id=__codelineno-7-2 name=__codelineno-7-2 href=#__codelineno-7-2></a>    {bits: 7,  name: 0x07, attr: [
+</span><span id=__span-7-3><a id=__codelineno-7-3 name=__codelineno-7-3 href=#__codelineno-7-3></a>      &#39;VLxU,VLE zero-extended&#39;,
+</span><span id=__span-7-4><a id=__codelineno-7-4 name=__codelineno-7-4 href=#__codelineno-7-4></a>      &#39;VLxU,VLE zero-extended, fault-only-first&#39;,
+</span><span id=__span-7-5><a id=__codelineno-7-5 name=__codelineno-7-5 href=#__codelineno-7-5></a>      &#39;VLxU sign-extended&#39;,
+</span><span id=__span-7-6><a id=__codelineno-7-6 name=__codelineno-7-6 href=#__codelineno-7-6></a>      &#39;VLxU sign-extended, fault-only-first&#39;,
+</span><span id=__span-7-7><a id=__codelineno-7-7 name=__codelineno-7-7 href=#__codelineno-7-7></a>    ]},
+</span><span id=__span-7-8><a id=__codelineno-7-8 name=__codelineno-7-8 href=#__codelineno-7-8></a>    {bits: 5,  name: &#39;vd&#39;, attr: &#39;destination of load&#39;, type: 2},
+</span><span id=__span-7-9><a id=__codelineno-7-9 name=__codelineno-7-9 href=#__codelineno-7-9></a>    {bits: 3,  name: &#39;width&#39;},
+</span><span id=__span-7-10><a id=__codelineno-7-10 name=__codelineno-7-10 href=#__codelineno-7-10></a>    {bits: 5,  name: &#39;rs1&#39;, attr: &#39;base address&#39;, type: 4},
+</span><span id=__span-7-11><a id=__codelineno-7-11 name=__codelineno-7-11 href=#__codelineno-7-11></a>    {bits: 5,  name: &#39;lumop&#39;, attr: [0, 16, 0, 16]},
+</span><span id=__span-7-12><a id=__codelineno-7-12 name=__codelineno-7-12 href=#__codelineno-7-12></a>    {bits: 1,  name: &#39;vm&#39;},
+</span><span id=__span-7-13><a id=__codelineno-7-13 name=__codelineno-7-13 href=#__codelineno-7-13></a>    {bits: 3,  name: &#39;mop&#39;, attr: [0, 0, 4, 4]},
+</span><span id=__span-7-14><a id=__codelineno-7-14 name=__codelineno-7-14 href=#__codelineno-7-14></a>    {bits: 3,  name: &#39;nf&#39;},
+</span><span id=__span-7-15><a id=__codelineno-7-15 name=__codelineno-7-15 href=#__codelineno-7-15></a>]}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-8-1><a id=__codelineno-8-1 name=__codelineno-8-1 href=#__codelineno-8-1></a>{reg: [
+</span><span id=__span-8-2><a id=__codelineno-8-2 name=__codelineno-8-2 href=#__codelineno-8-2></a>    {bits: 7,  name: 0x37, attr: [&#39;OPIVI&#39;]},
+</span><span id=__span-8-3><a id=__codelineno-8-3 name=__codelineno-8-3 href=#__codelineno-8-3></a>    {bits: 5,  name: &#39;vd&#39;, type: 2},
+</span><span id=__span-8-4><a id=__codelineno-8-4 name=__codelineno-8-4 href=#__codelineno-8-4></a>    {bits: 3,  name: 3},
+</span><span id=__span-8-5><a id=__codelineno-8-5 name=__codelineno-8-5 href=#__codelineno-8-5></a>    {bits: 5,  name: &#39;simm5&#39;, type: 5},
+</span><span id=__span-8-6><a id=__codelineno-8-6 name=__codelineno-8-6 href=#__codelineno-8-6></a>    {bits: 5,  name: &#39;vs2&#39;, type: 2},
+</span><span id=__span-8-7><a id=__codelineno-8-7 name=__codelineno-8-7 href=#__codelineno-8-7></a>    {bits: 1,  name: &#39;vm&#39;},
+</span><span id=__span-8-8><a id=__codelineno-8-8 name=__codelineno-8-8 href=#__codelineno-8-8></a>    {bits: 6,  name: &#39;funct6&#39;},
+</span><span id=__span-8-9><a id=__codelineno-8-9 name=__codelineno-8-9 href=#__codelineno-8-9></a>]}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-9-1><a id=__codelineno-9-1 name=__codelineno-9-1 href=#__codelineno-9-1></a>{ signal: [
+</span><span id=__span-9-2><a id=__codelineno-9-2 name=__codelineno-9-2 href=#__codelineno-9-2></a>  { name: &quot;clk&quot;,         wave: &quot;p.....|...&quot; },
+</span><span id=__span-9-3><a id=__codelineno-9-3 name=__codelineno-9-3 href=#__codelineno-9-3></a>  { name: &quot;Data&quot;,        wave: &quot;x.345x|=.x&quot;, data: [&quot;head&quot;, &quot;body&quot;, &quot;tail&quot;, &quot;data&quot;] },
+</span><span id=__span-9-4><a id=__codelineno-9-4 name=__codelineno-9-4 href=#__codelineno-9-4></a>  { name: &quot;Request&quot;,     wave: &quot;0.1..0|1.0&quot; },
+</span><span id=__span-9-5><a id=__codelineno-9-5 name=__codelineno-9-5 href=#__codelineno-9-5></a>  {},
+</span><span id=__span-9-6><a id=__codelineno-9-6 name=__codelineno-9-6 href=#__codelineno-9-6></a>  { name: &quot;Acknowledge&quot;, wave: &quot;1.....|01.&quot; }
+</span><span id=__span-9-7><a id=__codelineno-9-7 name=__codelineno-9-7 href=#__codelineno-9-7></a>]}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-10-1><a id=__codelineno-10-1 name=__codelineno-10-1 href=#__codelineno-10-1></a>{ signal: [
+</span><span id=__span-10-2><a id=__codelineno-10-2 name=__codelineno-10-2 href=#__codelineno-10-2></a>  { name: &#39;A&#39;, wave: &#39;01........0....&#39;,  node: &#39;.a........j&#39; },
+</span><span id=__span-10-3><a id=__codelineno-10-3 name=__codelineno-10-3 href=#__codelineno-10-3></a>  { name: &#39;B&#39;, wave: &#39;0.1.......0.1..&#39;,  node: &#39;..b.......i&#39; },
+</span><span id=__span-10-4><a id=__codelineno-10-4 name=__codelineno-10-4 href=#__codelineno-10-4></a>  { name: &#39;C&#39;, wave: &#39;0..1....0...1..&#39;,  node: &#39;...c....h..&#39; },
+</span><span id=__span-10-5><a id=__codelineno-10-5 name=__codelineno-10-5 href=#__codelineno-10-5></a>  { name: &#39;D&#39;, wave: &#39;0...1..0.....1.&#39;,  node: &#39;....d..g...&#39; },
+</span><span id=__span-10-6><a id=__codelineno-10-6 name=__codelineno-10-6 href=#__codelineno-10-6></a>  { name: &#39;E&#39;, wave: &#39;0....10.......1&#39;,  node: &#39;.....ef....&#39; }
+</span><span id=__span-10-7><a id=__codelineno-10-7 name=__codelineno-10-7 href=#__codelineno-10-7></a>  ],
+</span><span id=__span-10-8><a id=__codelineno-10-8 name=__codelineno-10-8 href=#__codelineno-10-8></a>  edge: [
+</span><span id=__span-10-9><a id=__codelineno-10-9 name=__codelineno-10-9 href=#__codelineno-10-9></a>    &#39;a~b t1&#39;, &#39;c-~a t2&#39;, &#39;c-~&gt;d time 3&#39;, &#39;d~-e&#39;,
+</span><span id=__span-10-10><a id=__codelineno-10-10 name=__codelineno-10-10 href=#__codelineno-10-10></a>    &#39;e~&gt;f&#39;, &#39;f-&gt;g&#39;, &#39;g-~&gt;h&#39;, &#39;h~&gt;i some text&#39;, &#39;h~-&gt;j&#39;
+</span><span id=__span-10-11><a id=__codelineno-10-11 name=__codelineno-10-11 href=#__codelineno-10-11></a>  ],
+</span><span id=__span-10-12><a id=__codelineno-10-12 name=__codelineno-10-12 href=#__codelineno-10-12></a>  config:{skin:&#39;lowkey&#39;}
+</span><span id=__span-10-13><a id=__codelineno-10-13 name=__codelineno-10-13 href=#__codelineno-10-13></a>}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-11-1><a id=__codelineno-11-1 name=__codelineno-11-1 href=#__codelineno-11-1></a>{ signal: [
+</span><span id=__span-11-2><a id=__codelineno-11-2 name=__codelineno-11-2 href=#__codelineno-11-2></a>  { name: &#39;Reset&#39;,
+</span><span id=__span-11-3><a id=__codelineno-11-3 name=__codelineno-11-3 href=#__codelineno-11-3></a>   wave:  &#39;01|...=...|01u&#39;, data: [&#39;a &lt; b&#39;],
+</span><span id=__span-11-4><a id=__codelineno-11-4 name=__codelineno-11-4 href=#__codelineno-11-4></a>
+</span><span id=__span-11-5><a id=__codelineno-11-5 name=__codelineno-11-5 href=#__codelineno-11-5></a>   node: &#39;...........E...&#39; },
+</span><span id=__span-11-6><a id=__codelineno-11-6 name=__codelineno-11-6 href=#__codelineno-11-6></a>  {},
+</span><span id=__span-11-7><a id=__codelineno-11-7 name=__codelineno-11-7 href=#__codelineno-11-7></a>  { name: &#39;Input&#39;,
+</span><span id=__span-11-8><a id=__codelineno-11-8 name=__codelineno-11-8 href=#__codelineno-11-8></a>      wave: &#39;x0|.1x....|.0d&#39;,
+</span><span id=__span-11-9><a id=__codelineno-11-9 name=__codelineno-11-9 href=#__codelineno-11-9></a>      node: &#39;....A.F.......&#39; },
+</span><span id=__span-11-10><a id=__codelineno-11-10 name=__codelineno-11-10 href=#__codelineno-11-10></a>  {},
+</span><span id=__span-11-11><a id=__codelineno-11-11 name=__codelineno-11-11 href=#__codelineno-11-11></a>  { name: &#39;Output&#39;,
+</span><span id=__span-11-12><a id=__codelineno-11-12 name=__codelineno-11-12 href=#__codelineno-11-12></a>      wave: &#39;0.|......1|0.d&#39;,
+</span><span id=__span-11-13><a id=__codelineno-11-13 name=__codelineno-11-13 href=#__codelineno-11-13></a>      node: &#39;.........C.F..&#39; },
+</span><span id=__span-11-14><a id=__codelineno-11-14 name=__codelineno-11-14 href=#__codelineno-11-14></a>
+</span><span id=__span-11-15><a id=__codelineno-11-15 name=__codelineno-11-15 href=#__codelineno-11-15></a>  {   node: &#39;....B....D.....&#39; },
+</span><span id=__span-11-16><a id=__codelineno-11-16 name=__codelineno-11-16 href=#__codelineno-11-16></a>  ],
+</span><span id=__span-11-17><a id=__codelineno-11-17 name=__codelineno-11-17 href=#__codelineno-11-17></a>  edge: [
+</span><span id=__span-11-18><a id=__codelineno-11-18 name=__codelineno-11-18 href=#__codelineno-11-18></a>    &#39;A-B&#39;, &#39;C-D&#39;, &#39;A~&gt;C&#39;, &#39;B&lt;-&gt;D T &gt; 45s&#39;, &#39;E-&gt;F&#39;
+</span><span id=__span-11-19><a id=__codelineno-11-19 name=__codelineno-11-19 href=#__codelineno-11-19></a>  ]
+</span><span id=__span-11-20><a id=__codelineno-11-20 name=__codelineno-11-20 href=#__codelineno-11-20></a>}
+</span></code></pre></div> <p><img alt="reg vl" src=https://cdn.jsdelivr.net/gh/kuanghl/pictures_bed/images/reg-vl.json5></p> <h4 id=43-bitfield>4.3. <a href=https://github.com/wavedrom/bitfield.git>bitfield</a><a class=headerlink href=#43-bitfield title="Permanent link">&para;</a></h4> <div class="language-text highlight"><pre><span></span><code><span id=__span-12-1><a id=__codelineno-12-1 name=__codelineno-12-1 href=#__codelineno-12-1></a>[
+</span><span id=__span-12-2><a id=__codelineno-12-2 name=__codelineno-12-2 href=#__codelineno-12-2></a>    { &quot;name&quot;: &quot;IPO&quot;,   &quot;bits&quot;: 8, &quot;attr&quot;: &quot;RO&quot; },
+</span><span id=__span-12-3><a id=__codelineno-12-3 name=__codelineno-12-3 href=#__codelineno-12-3></a>    {                  &quot;bits&quot;: 7 },
+</span><span id=__span-12-4><a id=__codelineno-12-4 name=__codelineno-12-4 href=#__codelineno-12-4></a>    { &quot;name&quot;: &quot;BRK&quot;,   &quot;bits&quot;: 5, &quot;attr&quot;: &quot;RW&quot;, &quot;type&quot;: 4 },
+</span><span id=__span-12-5><a id=__codelineno-12-5 name=__codelineno-12-5 href=#__codelineno-12-5></a>    { &quot;name&quot;: &quot;CPK&quot;,   &quot;bits&quot;: 1 },
+</span><span id=__span-12-6><a id=__codelineno-12-6 name=__codelineno-12-6 href=#__codelineno-12-6></a>    { &quot;name&quot;: &quot;Clear&quot;, &quot;bits&quot;: 3 },
+</span><span id=__span-12-7><a id=__codelineno-12-7 name=__codelineno-12-7 href=#__codelineno-12-7></a>    { &quot;bits&quot;: 8 }
+</span><span id=__span-12-8><a id=__codelineno-12-8 name=__codelineno-12-8 href=#__codelineno-12-8></a>]
+</span></code></pre></div> <h4 id=44-graphviz>4.4. <a href=https://en.wikipedia.org/wiki/DOT_(graph_description_language)>GraphViz</a><a class=headerlink href=#44-graphviz title="Permanent link">&para;</a></h4> <div class="language-dot highlight"><pre><span></span><code><span id=__span-13-1><a id=__codelineno-13-1 name=__codelineno-13-1 href=#__codelineno-13-1></a><span class=k>digraph</span><span class=w> </span><span class=nt>g</span><span class=w> </span><span class=p>{</span>
+</span><span id=__span-13-2><a id=__codelineno-13-2 name=__codelineno-13-2 href=#__codelineno-13-2></a><span class=w>    </span><span class=k>node</span><span class=w> </span><span class=p>[</span><span class=na>shape</span><span class=p>=</span><span class=s>plaintext</span><span class=p>];</span>
+</span><span id=__span-13-3><a id=__codelineno-13-3 name=__codelineno-13-3 href=#__codelineno-13-3></a><span class=w>    </span><span class=nt>A1</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>B1</span><span class=p>;</span>
+</span><span id=__span-13-4><a id=__codelineno-13-4 name=__codelineno-13-4 href=#__codelineno-13-4></a><span class=w>    </span><span class=nt>A2</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>B2</span><span class=p>;</span>
+</span><span id=__span-13-5><a id=__codelineno-13-5 name=__codelineno-13-5 href=#__codelineno-13-5></a><span class=w>    </span><span class=nt>A3</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>B3</span><span class=p>;</span>
+</span><span id=__span-13-6><a id=__codelineno-13-6 name=__codelineno-13-6 href=#__codelineno-13-6></a>
+</span><span id=__span-13-7><a id=__codelineno-13-7 name=__codelineno-13-7 href=#__codelineno-13-7></a><span class=w>    </span><span class=nt>A1</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>A2</span><span class=w> </span><span class=p>[</span><span class=na>label</span><span class=p>=</span><span class=s>f</span><span class=p>];</span>
+</span><span id=__span-13-8><a id=__codelineno-13-8 name=__codelineno-13-8 href=#__codelineno-13-8></a><span class=w>    </span><span class=nt>A2</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>A3</span><span class=w> </span><span class=p>[</span><span class=na>label</span><span class=p>=</span><span class=s>g</span><span class=p>];</span>
+</span><span id=__span-13-9><a id=__codelineno-13-9 name=__codelineno-13-9 href=#__codelineno-13-9></a><span class=w>    </span><span class=nt>B2</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>B3</span><span class=w> </span><span class=p>[</span><span class=na>label</span><span class=p>=</span><span class=s2>&quot;g&#39;&quot;</span><span class=p>];</span>
+</span><span id=__span-13-10><a id=__codelineno-13-10 name=__codelineno-13-10 href=#__codelineno-13-10></a><span class=w>    </span><span class=nt>B1</span><span class=w> </span><span class=o>-&gt;</span><span class=w> </span><span class=nt>B3</span><span class=w> </span><span class=p>[</span><span class=na>label</span><span class=p>=</span><span class=s2>&quot;(g o f)&#39;&quot;</span><span class=w> </span><span class=na>tailport</span><span class=p>=</span><span class=s>s</span><span class=w> </span><span class=na>headport</span><span class=p>=</span><span class=s>s</span><span class=p>];</span>
+</span><span id=__span-13-11><a id=__codelineno-13-11 name=__codelineno-13-11 href=#__codelineno-13-11></a>
+</span><span id=__span-13-12><a id=__codelineno-13-12 name=__codelineno-13-12 href=#__codelineno-13-12></a><span class=w>    </span><span class=p>{</span><span class=w> </span><span class=na>rank</span><span class=p>=</span><span class=s>same</span><span class=p>;</span><span class=w> </span><span class=nt>A1</span><span class=w> </span><span class=nt>A2</span><span class=w> </span><span class=nt>A3</span><span class=w> </span><span class=p>}</span>
+</span><span id=__span-13-13><a id=__codelineno-13-13 name=__codelineno-13-13 href=#__codelineno-13-13></a><span class=w>    </span><span class=p>{</span><span class=w> </span><span class=na>rank</span><span class=p>=</span><span class=s>same</span><span class=p>;</span><span class=w> </span><span class=nt>B1</span><span class=w> </span><span class=nt>B2</span><span class=w> </span><span class=nt>B3</span><span class=w> </span><span class=p>}</span><span class=w> </span>
+</span><span id=__span-13-14><a id=__codelineno-13-14 name=__codelineno-13-14 href=#__codelineno-13-14></a><span class=p>}</span>
+</span></code></pre></div> <p>```viz{engine="circo"} graph graphname { a -- b -- c; b -- d; b -- e; } <div class="language-text highlight"><pre><span></span><code><span id=__span-14-1><a id=__codelineno-14-1 name=__codelineno-14-1 href=#__codelineno-14-1></a>```dot{engine=&quot;circo&quot;}
+</span><span id=__span-14-2><a id=__codelineno-14-2 name=__codelineno-14-2 href=#__codelineno-14-2></a>digraph g {
+</span><span id=__span-14-3><a id=__codelineno-14-3 name=__codelineno-14-3 href=#__codelineno-14-3></a>    a -&gt; b -&gt; c;
+</span><span id=__span-14-4><a id=__codelineno-14-4 name=__codelineno-14-4 href=#__codelineno-14-4></a>    b -&gt; d;
+</span><span id=__span-14-5><a id=__codelineno-14-5 name=__codelineno-14-5 href=#__codelineno-14-5></a>    b -&gt; e;
+</span><span id=__span-14-6><a id=__codelineno-14-6 name=__codelineno-14-6 href=#__codelineno-14-6></a>    a -&gt; e;
+</span><span id=__span-14-7><a id=__codelineno-14-7 name=__codelineno-14-7 href=#__codelineno-14-7></a>    c -&gt; a;
+</span><span id=__span-14-8><a id=__codelineno-14-8 name=__codelineno-14-8 href=#__codelineno-14-8></a>}
+</span></code></pre></div></p> <h4 id=45-vegavega-lite>4.5. <a href=https://vega.github.io/vega/ >Vega</a>/<a href=https://vega.github.io/vega-lite/ >Vega-lite</a><a class=headerlink href=#45-vegavega-lite title="Permanent link">&para;</a></h4> <div class="language-text highlight"><pre><span></span><code><span id=__span-15-1><a id=__codelineno-15-1 name=__codelineno-15-1 href=#__codelineno-15-1></a>{
+</span><span id=__span-15-2><a id=__codelineno-15-2 name=__codelineno-15-2 href=#__codelineno-15-2></a>  &quot;$schema&quot;:&quot;https://vega.github.io/schema/vega/v4.json&quot;,
+</span><span id=__span-15-3><a id=__codelineno-15-3 name=__codelineno-15-3 href=#__codelineno-15-3></a>  &quot;width&quot;: 400, &quot;height&quot;: 200,
+</span><span id=__span-15-4><a id=__codelineno-15-4 name=__codelineno-15-4 href=#__codelineno-15-4></a>  &quot;data&quot;: [ {
+</span><span id=__span-15-5><a id=__codelineno-15-5 name=__codelineno-15-5 href=#__codelineno-15-5></a>    &quot;name&quot;: &quot;vals&quot;,
+</span><span id=__span-15-6><a id=__codelineno-15-6 name=__codelineno-15-6 href=#__codelineno-15-6></a>    &quot;values&quot;: [
+</span><span id=__span-15-7><a id=__codelineno-15-7 name=__codelineno-15-7 href=#__codelineno-15-7></a>      {&quot;category&quot;: &quot;Oranges&quot;},
+</span><span id=__span-15-8><a id=__codelineno-15-8 name=__codelineno-15-8 href=#__codelineno-15-8></a>      {&quot;category&quot;: &quot;Pears&quot;},
+</span><span id=__span-15-9><a id=__codelineno-15-9 name=__codelineno-15-9 href=#__codelineno-15-9></a>      {&quot;category&quot;: &quot;Apples&quot;},
+</span><span id=__span-15-10><a id=__codelineno-15-10 name=__codelineno-15-10 href=#__codelineno-15-10></a>      {&quot;category&quot;: &quot;Peaches&quot;},
+</span><span id=__span-15-11><a id=__codelineno-15-11 name=__codelineno-15-11 href=#__codelineno-15-11></a>      {&quot;category&quot;: &quot;Bananas&quot;},
+</span><span id=__span-15-12><a id=__codelineno-15-12 name=__codelineno-15-12 href=#__codelineno-15-12></a>      {&quot;category&quot;: &quot;Grapes&quot;}
+</span><span id=__span-15-13><a id=__codelineno-15-13 name=__codelineno-15-13 href=#__codelineno-15-13></a>    ],
+</span><span id=__span-15-14><a id=__codelineno-15-14 name=__codelineno-15-14 href=#__codelineno-15-14></a>    &quot;transform&quot;: [
+</span><span id=__span-15-15><a id=__codelineno-15-15 name=__codelineno-15-15 href=#__codelineno-15-15></a>      {&quot;type&quot;: &quot;formula&quot;, &quot;as&quot;: &quot;count&quot;, &quot;expr&quot;: &quot;random()*1000&quot;}
+</span><span id=__span-15-16><a id=__codelineno-15-16 name=__codelineno-15-16 href=#__codelineno-15-16></a>    ]
+</span><span id=__span-15-17><a id=__codelineno-15-17 name=__codelineno-15-17 href=#__codelineno-15-17></a>  } ],
+</span><span id=__span-15-18><a id=__codelineno-15-18 name=__codelineno-15-18 href=#__codelineno-15-18></a> &quot;scales&quot;: [
+</span><span id=__span-15-19><a id=__codelineno-15-19 name=__codelineno-15-19 href=#__codelineno-15-19></a>    {
+</span><span id=__span-15-20><a id=__codelineno-15-20 name=__codelineno-15-20 href=#__codelineno-15-20></a>      &quot;name&quot;: &quot;yscale&quot;,
+</span><span id=__span-15-21><a id=__codelineno-15-21 name=__codelineno-15-21 href=#__codelineno-15-21></a>      &quot;type&quot;: &quot;linear&quot;,
+</span><span id=__span-15-22><a id=__codelineno-15-22 name=__codelineno-15-22 href=#__codelineno-15-22></a>      &quot;zero&quot;: true,
+</span><span id=__span-15-23><a id=__codelineno-15-23 name=__codelineno-15-23 href=#__codelineno-15-23></a>      &quot;domain&quot;: {&quot;data&quot;: &quot;vals&quot;, &quot;field&quot;: &quot;count&quot;},
+</span><span id=__span-15-24><a id=__codelineno-15-24 name=__codelineno-15-24 href=#__codelineno-15-24></a>      &quot;range&quot;: &quot;height&quot;
+</span><span id=__span-15-25><a id=__codelineno-15-25 name=__codelineno-15-25 href=#__codelineno-15-25></a>    },
+</span><span id=__span-15-26><a id=__codelineno-15-26 name=__codelineno-15-26 href=#__codelineno-15-26></a>    {
+</span><span id=__span-15-27><a id=__codelineno-15-27 name=__codelineno-15-27 href=#__codelineno-15-27></a>      &quot;name&quot;: &quot;xscale&quot;,
+</span><span id=__span-15-28><a id=__codelineno-15-28 name=__codelineno-15-28 href=#__codelineno-15-28></a>      &quot;type&quot;: &quot;band&quot;,
+</span><span id=__span-15-29><a id=__codelineno-15-29 name=__codelineno-15-29 href=#__codelineno-15-29></a>      &quot;domain&quot;: {&quot;data&quot;: &quot;vals&quot;, &quot;field&quot;: &quot;category&quot;},
+</span><span id=__span-15-30><a id=__codelineno-15-30 name=__codelineno-15-30 href=#__codelineno-15-30></a>      &quot;range&quot;: &quot;width&quot;,
+</span><span id=__span-15-31><a id=__codelineno-15-31 name=__codelineno-15-31 href=#__codelineno-15-31></a>      &quot;padding&quot;: 0.05
+</span><span id=__span-15-32><a id=__codelineno-15-32 name=__codelineno-15-32 href=#__codelineno-15-32></a>    }
+</span><span id=__span-15-33><a id=__codelineno-15-33 name=__codelineno-15-33 href=#__codelineno-15-33></a>  ],
+</span><span id=__span-15-34><a id=__codelineno-15-34 name=__codelineno-15-34 href=#__codelineno-15-34></a>  &quot;axes&quot;: [
+</span><span id=__span-15-35><a id=__codelineno-15-35 name=__codelineno-15-35 href=#__codelineno-15-35></a>    {&quot;scale&quot;: &quot;yscale&quot;, &quot;orient&quot;: &quot;left&quot;},
+</span><span id=__span-15-36><a id=__codelineno-15-36 name=__codelineno-15-36 href=#__codelineno-15-36></a>    {&quot;scale&quot;: &quot;xscale&quot;, &quot;orient&quot;: &quot;bottom&quot;}
+</span><span id=__span-15-37><a id=__codelineno-15-37 name=__codelineno-15-37 href=#__codelineno-15-37></a>  ],
+</span><span id=__span-15-38><a id=__codelineno-15-38 name=__codelineno-15-38 href=#__codelineno-15-38></a>  &quot;marks&quot;: [ {
+</span><span id=__span-15-39><a id=__codelineno-15-39 name=__codelineno-15-39 href=#__codelineno-15-39></a>    &quot;type&quot;: &quot;rect&quot;,
+</span><span id=__span-15-40><a id=__codelineno-15-40 name=__codelineno-15-40 href=#__codelineno-15-40></a>    &quot;from&quot;: { &quot;data&quot;: &quot;vals&quot; },
+</span><span id=__span-15-41><a id=__codelineno-15-41 name=__codelineno-15-41 href=#__codelineno-15-41></a>    &quot;encode&quot;: {
+</span><span id=__span-15-42><a id=__codelineno-15-42 name=__codelineno-15-42 href=#__codelineno-15-42></a>      &quot;update&quot;: {
+</span><span id=__span-15-43><a id=__codelineno-15-43 name=__codelineno-15-43 href=#__codelineno-15-43></a>        &quot;x&quot;:     {&quot;scale&quot;: &quot;xscale&quot;, &quot;field&quot;: &quot;category&quot;},
+</span><span id=__span-15-44><a id=__codelineno-15-44 name=__codelineno-15-44 href=#__codelineno-15-44></a>        &quot;width&quot;: {&quot;scale&quot;: &quot;xscale&quot;, &quot;band&quot;: 1},
+</span><span id=__span-15-45><a id=__codelineno-15-45 name=__codelineno-15-45 href=#__codelineno-15-45></a>        &quot;y&quot;:     {&quot;scale&quot;: &quot;yscale&quot;, &quot;field&quot;: &quot;count&quot;},
+</span><span id=__span-15-46><a id=__codelineno-15-46 name=__codelineno-15-46 href=#__codelineno-15-46></a>        &quot;y2&quot;:    {&quot;scale&quot;: &quot;yscale&quot;, &quot;value&quot;: 0},
+</span><span id=__span-15-47><a id=__codelineno-15-47 name=__codelineno-15-47 href=#__codelineno-15-47></a>        &quot;fill&quot;:  [
+</span><span id=__span-15-48><a id=__codelineno-15-48 name=__codelineno-15-48 href=#__codelineno-15-48></a>          {&quot;test&quot;: &quot;datum.count &lt; 333&quot;, &quot;value&quot;: &quot;red&quot;},
+</span><span id=__span-15-49><a id=__codelineno-15-49 name=__codelineno-15-49 href=#__codelineno-15-49></a>          {&quot;test&quot;: &quot;datum.count &lt; 666&quot;, &quot;value&quot;: &quot;yellow&quot;},
+</span><span id=__span-15-50><a id=__codelineno-15-50 name=__codelineno-15-50 href=#__codelineno-15-50></a>          {&quot;value&quot;: &quot;green&quot;}
+</span><span id=__span-15-51><a id=__codelineno-15-51 name=__codelineno-15-51 href=#__codelineno-15-51></a>        ]
+</span><span id=__span-15-52><a id=__codelineno-15-52 name=__codelineno-15-52 href=#__codelineno-15-52></a>      }
+</span><span id=__span-15-53><a id=__codelineno-15-53 name=__codelineno-15-53 href=#__codelineno-15-53></a>    }
+</span><span id=__span-15-54><a id=__codelineno-15-54 name=__codelineno-15-54 href=#__codelineno-15-54></a>  } ]
+</span><span id=__span-15-55><a id=__codelineno-15-55 name=__codelineno-15-55 href=#__codelineno-15-55></a>}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-16-1><a id=__codelineno-16-1 name=__codelineno-16-1 href=#__codelineno-16-1></a>{
+</span><span id=__span-16-2><a id=__codelineno-16-2 name=__codelineno-16-2 href=#__codelineno-16-2></a>  &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega/v5.json&quot;,
+</span><span id=__span-16-3><a id=__codelineno-16-3 name=__codelineno-16-3 href=#__codelineno-16-3></a>  &quot;width&quot;: 400,
+</span><span id=__span-16-4><a id=__codelineno-16-4 name=__codelineno-16-4 href=#__codelineno-16-4></a>  &quot;height&quot;: 200,
+</span><span id=__span-16-5><a id=__codelineno-16-5 name=__codelineno-16-5 href=#__codelineno-16-5></a>  &quot;padding&quot;: 5,
+</span><span id=__span-16-6><a id=__codelineno-16-6 name=__codelineno-16-6 href=#__codelineno-16-6></a>
+</span><span id=__span-16-7><a id=__codelineno-16-7 name=__codelineno-16-7 href=#__codelineno-16-7></a>  &quot;data&quot;: [
+</span><span id=__span-16-8><a id=__codelineno-16-8 name=__codelineno-16-8 href=#__codelineno-16-8></a>    {
+</span><span id=__span-16-9><a id=__codelineno-16-9 name=__codelineno-16-9 href=#__codelineno-16-9></a>      &quot;name&quot;: &quot;table&quot;,
+</span><span id=__span-16-10><a id=__codelineno-16-10 name=__codelineno-16-10 href=#__codelineno-16-10></a>      &quot;values&quot;: [
+</span><span id=__span-16-11><a id=__codelineno-16-11 name=__codelineno-16-11 href=#__codelineno-16-11></a>        {&quot;category&quot;: &quot;A&quot;, &quot;amount&quot;: 28},
+</span><span id=__span-16-12><a id=__codelineno-16-12 name=__codelineno-16-12 href=#__codelineno-16-12></a>        {&quot;category&quot;: &quot;B&quot;, &quot;amount&quot;: 55},
+</span><span id=__span-16-13><a id=__codelineno-16-13 name=__codelineno-16-13 href=#__codelineno-16-13></a>        {&quot;category&quot;: &quot;C&quot;, &quot;amount&quot;: 43},
+</span><span id=__span-16-14><a id=__codelineno-16-14 name=__codelineno-16-14 href=#__codelineno-16-14></a>        {&quot;category&quot;: &quot;D&quot;, &quot;amount&quot;: 91},
+</span><span id=__span-16-15><a id=__codelineno-16-15 name=__codelineno-16-15 href=#__codelineno-16-15></a>        {&quot;category&quot;: &quot;E&quot;, &quot;amount&quot;: 81},
+</span><span id=__span-16-16><a id=__codelineno-16-16 name=__codelineno-16-16 href=#__codelineno-16-16></a>        {&quot;category&quot;: &quot;F&quot;, &quot;amount&quot;: 53},
+</span><span id=__span-16-17><a id=__codelineno-16-17 name=__codelineno-16-17 href=#__codelineno-16-17></a>        {&quot;category&quot;: &quot;G&quot;, &quot;amount&quot;: 190},
+</span><span id=__span-16-18><a id=__codelineno-16-18 name=__codelineno-16-18 href=#__codelineno-16-18></a>        {&quot;category&quot;: &quot;H&quot;, &quot;amount&quot;: 87}
+</span><span id=__span-16-19><a id=__codelineno-16-19 name=__codelineno-16-19 href=#__codelineno-16-19></a>      ]
+</span><span id=__span-16-20><a id=__codelineno-16-20 name=__codelineno-16-20 href=#__codelineno-16-20></a>    }
+</span><span id=__span-16-21><a id=__codelineno-16-21 name=__codelineno-16-21 href=#__codelineno-16-21></a>  ],
+</span><span id=__span-16-22><a id=__codelineno-16-22 name=__codelineno-16-22 href=#__codelineno-16-22></a>
+</span><span id=__span-16-23><a id=__codelineno-16-23 name=__codelineno-16-23 href=#__codelineno-16-23></a>  &quot;signals&quot;: [
+</span><span id=__span-16-24><a id=__codelineno-16-24 name=__codelineno-16-24 href=#__codelineno-16-24></a>    {
+</span><span id=__span-16-25><a id=__codelineno-16-25 name=__codelineno-16-25 href=#__codelineno-16-25></a>      &quot;name&quot;: &quot;tooltip&quot;,
+</span><span id=__span-16-26><a id=__codelineno-16-26 name=__codelineno-16-26 href=#__codelineno-16-26></a>      &quot;value&quot;: {},
+</span><span id=__span-16-27><a id=__codelineno-16-27 name=__codelineno-16-27 href=#__codelineno-16-27></a>      &quot;on&quot;: [
+</span><span id=__span-16-28><a id=__codelineno-16-28 name=__codelineno-16-28 href=#__codelineno-16-28></a>        {&quot;events&quot;: &quot;rect:mouseover&quot;, &quot;update&quot;: &quot;datum&quot;},
+</span><span id=__span-16-29><a id=__codelineno-16-29 name=__codelineno-16-29 href=#__codelineno-16-29></a>        {&quot;events&quot;: &quot;rect:mouseout&quot;,  &quot;update&quot;: &quot;{}&quot;}
+</span><span id=__span-16-30><a id=__codelineno-16-30 name=__codelineno-16-30 href=#__codelineno-16-30></a>      ]
+</span><span id=__span-16-31><a id=__codelineno-16-31 name=__codelineno-16-31 href=#__codelineno-16-31></a>    }
+</span><span id=__span-16-32><a id=__codelineno-16-32 name=__codelineno-16-32 href=#__codelineno-16-32></a>  ],
+</span><span id=__span-16-33><a id=__codelineno-16-33 name=__codelineno-16-33 href=#__codelineno-16-33></a>
+</span><span id=__span-16-34><a id=__codelineno-16-34 name=__codelineno-16-34 href=#__codelineno-16-34></a>  &quot;scales&quot;: [
+</span><span id=__span-16-35><a id=__codelineno-16-35 name=__codelineno-16-35 href=#__codelineno-16-35></a>    {
+</span><span id=__span-16-36><a id=__codelineno-16-36 name=__codelineno-16-36 href=#__codelineno-16-36></a>      &quot;name&quot;: &quot;xscale&quot;,
+</span><span id=__span-16-37><a id=__codelineno-16-37 name=__codelineno-16-37 href=#__codelineno-16-37></a>      &quot;type&quot;: &quot;band&quot;,
+</span><span id=__span-16-38><a id=__codelineno-16-38 name=__codelineno-16-38 href=#__codelineno-16-38></a>      &quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;category&quot;},
+</span><span id=__span-16-39><a id=__codelineno-16-39 name=__codelineno-16-39 href=#__codelineno-16-39></a>      &quot;range&quot;: &quot;width&quot;,
+</span><span id=__span-16-40><a id=__codelineno-16-40 name=__codelineno-16-40 href=#__codelineno-16-40></a>      &quot;padding&quot;: 0.05,
+</span><span id=__span-16-41><a id=__codelineno-16-41 name=__codelineno-16-41 href=#__codelineno-16-41></a>      &quot;round&quot;: true
+</span><span id=__span-16-42><a id=__codelineno-16-42 name=__codelineno-16-42 href=#__codelineno-16-42></a>    },
+</span><span id=__span-16-43><a id=__codelineno-16-43 name=__codelineno-16-43 href=#__codelineno-16-43></a>    {
+</span><span id=__span-16-44><a id=__codelineno-16-44 name=__codelineno-16-44 href=#__codelineno-16-44></a>      &quot;name&quot;: &quot;yscale&quot;,
+</span><span id=__span-16-45><a id=__codelineno-16-45 name=__codelineno-16-45 href=#__codelineno-16-45></a>      &quot;domain&quot;: {&quot;data&quot;: &quot;table&quot;, &quot;field&quot;: &quot;amount&quot;},
+</span><span id=__span-16-46><a id=__codelineno-16-46 name=__codelineno-16-46 href=#__codelineno-16-46></a>      &quot;nice&quot;: true,
+</span><span id=__span-16-47><a id=__codelineno-16-47 name=__codelineno-16-47 href=#__codelineno-16-47></a>      &quot;range&quot;: &quot;height&quot;
+</span><span id=__span-16-48><a id=__codelineno-16-48 name=__codelineno-16-48 href=#__codelineno-16-48></a>    }
+</span><span id=__span-16-49><a id=__codelineno-16-49 name=__codelineno-16-49 href=#__codelineno-16-49></a>  ],
+</span><span id=__span-16-50><a id=__codelineno-16-50 name=__codelineno-16-50 href=#__codelineno-16-50></a>
+</span><span id=__span-16-51><a id=__codelineno-16-51 name=__codelineno-16-51 href=#__codelineno-16-51></a>  &quot;axes&quot;: [
+</span><span id=__span-16-52><a id=__codelineno-16-52 name=__codelineno-16-52 href=#__codelineno-16-52></a>    { &quot;orient&quot;: &quot;bottom&quot;, &quot;scale&quot;: &quot;xscale&quot; },
+</span><span id=__span-16-53><a id=__codelineno-16-53 name=__codelineno-16-53 href=#__codelineno-16-53></a>    { &quot;orient&quot;: &quot;left&quot;, &quot;scale&quot;: &quot;yscale&quot; }
+</span><span id=__span-16-54><a id=__codelineno-16-54 name=__codelineno-16-54 href=#__codelineno-16-54></a>  ],
+</span><span id=__span-16-55><a id=__codelineno-16-55 name=__codelineno-16-55 href=#__codelineno-16-55></a>
+</span><span id=__span-16-56><a id=__codelineno-16-56 name=__codelineno-16-56 href=#__codelineno-16-56></a>  &quot;marks&quot;: [
+</span><span id=__span-16-57><a id=__codelineno-16-57 name=__codelineno-16-57 href=#__codelineno-16-57></a>    {
+</span><span id=__span-16-58><a id=__codelineno-16-58 name=__codelineno-16-58 href=#__codelineno-16-58></a>      &quot;type&quot;: &quot;rect&quot;,
+</span><span id=__span-16-59><a id=__codelineno-16-59 name=__codelineno-16-59 href=#__codelineno-16-59></a>      &quot;from&quot;: {&quot;data&quot;:&quot;table&quot;},
+</span><span id=__span-16-60><a id=__codelineno-16-60 name=__codelineno-16-60 href=#__codelineno-16-60></a>      &quot;encode&quot;: {
+</span><span id=__span-16-61><a id=__codelineno-16-61 name=__codelineno-16-61 href=#__codelineno-16-61></a>        &quot;enter&quot;: {
+</span><span id=__span-16-62><a id=__codelineno-16-62 name=__codelineno-16-62 href=#__codelineno-16-62></a>          &quot;x&quot;: {&quot;scale&quot;: &quot;xscale&quot;, &quot;field&quot;: &quot;category&quot;},
+</span><span id=__span-16-63><a id=__codelineno-16-63 name=__codelineno-16-63 href=#__codelineno-16-63></a>          &quot;width&quot;: {&quot;scale&quot;: &quot;xscale&quot;, &quot;band&quot;: 1},
+</span><span id=__span-16-64><a id=__codelineno-16-64 name=__codelineno-16-64 href=#__codelineno-16-64></a>          &quot;y&quot;: {&quot;scale&quot;: &quot;yscale&quot;, &quot;field&quot;: &quot;amount&quot;},
+</span><span id=__span-16-65><a id=__codelineno-16-65 name=__codelineno-16-65 href=#__codelineno-16-65></a>          &quot;y2&quot;: {&quot;scale&quot;: &quot;yscale&quot;, &quot;value&quot;: 0}
+</span><span id=__span-16-66><a id=__codelineno-16-66 name=__codelineno-16-66 href=#__codelineno-16-66></a>        },
+</span><span id=__span-16-67><a id=__codelineno-16-67 name=__codelineno-16-67 href=#__codelineno-16-67></a>        &quot;update&quot;: {
+</span><span id=__span-16-68><a id=__codelineno-16-68 name=__codelineno-16-68 href=#__codelineno-16-68></a>          &quot;fill&quot;: {&quot;value&quot;: &quot;steelblue&quot;}
+</span><span id=__span-16-69><a id=__codelineno-16-69 name=__codelineno-16-69 href=#__codelineno-16-69></a>        },
+</span><span id=__span-16-70><a id=__codelineno-16-70 name=__codelineno-16-70 href=#__codelineno-16-70></a>        &quot;hover&quot;: {
+</span><span id=__span-16-71><a id=__codelineno-16-71 name=__codelineno-16-71 href=#__codelineno-16-71></a>          &quot;fill&quot;: {&quot;value&quot;: &quot;red&quot;}
+</span><span id=__span-16-72><a id=__codelineno-16-72 name=__codelineno-16-72 href=#__codelineno-16-72></a>        }
+</span><span id=__span-16-73><a id=__codelineno-16-73 name=__codelineno-16-73 href=#__codelineno-16-73></a>      }
+</span><span id=__span-16-74><a id=__codelineno-16-74 name=__codelineno-16-74 href=#__codelineno-16-74></a>    },
+</span><span id=__span-16-75><a id=__codelineno-16-75 name=__codelineno-16-75 href=#__codelineno-16-75></a>    {
+</span><span id=__span-16-76><a id=__codelineno-16-76 name=__codelineno-16-76 href=#__codelineno-16-76></a>      &quot;type&quot;: &quot;text&quot;,
+</span><span id=__span-16-77><a id=__codelineno-16-77 name=__codelineno-16-77 href=#__codelineno-16-77></a>      &quot;encode&quot;: {
+</span><span id=__span-16-78><a id=__codelineno-16-78 name=__codelineno-16-78 href=#__codelineno-16-78></a>        &quot;enter&quot;: {
+</span><span id=__span-16-79><a id=__codelineno-16-79 name=__codelineno-16-79 href=#__codelineno-16-79></a>          &quot;align&quot;: {&quot;value&quot;: &quot;center&quot;},
+</span><span id=__span-16-80><a id=__codelineno-16-80 name=__codelineno-16-80 href=#__codelineno-16-80></a>          &quot;baseline&quot;: {&quot;value&quot;: &quot;bottom&quot;},
+</span><span id=__span-16-81><a id=__codelineno-16-81 name=__codelineno-16-81 href=#__codelineno-16-81></a>          &quot;fill&quot;: {&quot;value&quot;: &quot;#333&quot;}
+</span><span id=__span-16-82><a id=__codelineno-16-82 name=__codelineno-16-82 href=#__codelineno-16-82></a>        },
+</span><span id=__span-16-83><a id=__codelineno-16-83 name=__codelineno-16-83 href=#__codelineno-16-83></a>        &quot;update&quot;: {
+</span><span id=__span-16-84><a id=__codelineno-16-84 name=__codelineno-16-84 href=#__codelineno-16-84></a>          &quot;x&quot;: {&quot;scale&quot;: &quot;xscale&quot;, &quot;signal&quot;: &quot;tooltip.category&quot;, &quot;band&quot;: 0.5},
+</span><span id=__span-16-85><a id=__codelineno-16-85 name=__codelineno-16-85 href=#__codelineno-16-85></a>          &quot;y&quot;: {&quot;scale&quot;: &quot;yscale&quot;, &quot;signal&quot;: &quot;tooltip.amount&quot;, &quot;offset&quot;: -2},
+</span><span id=__span-16-86><a id=__codelineno-16-86 name=__codelineno-16-86 href=#__codelineno-16-86></a>          &quot;text&quot;: {&quot;signal&quot;: &quot;tooltip.amount&quot;},
+</span><span id=__span-16-87><a id=__codelineno-16-87 name=__codelineno-16-87 href=#__codelineno-16-87></a>          &quot;fillOpacity&quot;: [
+</span><span id=__span-16-88><a id=__codelineno-16-88 name=__codelineno-16-88 href=#__codelineno-16-88></a>            {&quot;test&quot;: &quot;datum === tooltip&quot;, &quot;value&quot;: 0},
+</span><span id=__span-16-89><a id=__codelineno-16-89 name=__codelineno-16-89 href=#__codelineno-16-89></a>            {&quot;value&quot;: 1}
+</span><span id=__span-16-90><a id=__codelineno-16-90 name=__codelineno-16-90 href=#__codelineno-16-90></a>          ]
+</span><span id=__span-16-91><a id=__codelineno-16-91 name=__codelineno-16-91 href=#__codelineno-16-91></a>        }
+</span><span id=__span-16-92><a id=__codelineno-16-92 name=__codelineno-16-92 href=#__codelineno-16-92></a>      }
+</span><span id=__span-16-93><a id=__codelineno-16-93 name=__codelineno-16-93 href=#__codelineno-16-93></a>    }
+</span><span id=__span-16-94><a id=__codelineno-16-94 name=__codelineno-16-94 href=#__codelineno-16-94></a>  ]
+</span><span id=__span-16-95><a id=__codelineno-16-95 name=__codelineno-16-95 href=#__codelineno-16-95></a>}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-17-1><a id=__codelineno-17-1 name=__codelineno-17-1 href=#__codelineno-17-1></a>{
+</span><span id=__span-17-2><a id=__codelineno-17-2 name=__codelineno-17-2 href=#__codelineno-17-2></a>&quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;,
+</span><span id=__span-17-3><a id=__codelineno-17-3 name=__codelineno-17-3 href=#__codelineno-17-3></a>&quot;description&quot;: &quot;A simple bar chart with embedded data.&quot;,
+</span><span id=__span-17-4><a id=__codelineno-17-4 name=__codelineno-17-4 href=#__codelineno-17-4></a>&quot;width&quot;: 500,
+</span><span id=__span-17-5><a id=__codelineno-17-5 name=__codelineno-17-5 href=#__codelineno-17-5></a>&quot;data&quot;: {
+</span><span id=__span-17-6><a id=__codelineno-17-6 name=__codelineno-17-6 href=#__codelineno-17-6></a>    &quot;values&quot;: [
+</span><span id=__span-17-7><a id=__codelineno-17-7 name=__codelineno-17-7 href=#__codelineno-17-7></a>    {&quot;a&quot;: &quot;A&quot;, &quot;b&quot;: 28}, {&quot;a&quot;: &quot;B&quot;, &quot;b&quot;: 55}, {&quot;a&quot;: &quot;C&quot;, &quot;b&quot;: 43},
+</span><span id=__span-17-8><a id=__codelineno-17-8 name=__codelineno-17-8 href=#__codelineno-17-8></a>    {&quot;a&quot;: &quot;D&quot;, &quot;b&quot;: 91}, {&quot;a&quot;: &quot;E&quot;, &quot;b&quot;: 81}, {&quot;a&quot;: &quot;F&quot;, &quot;b&quot;: 53},
+</span><span id=__span-17-9><a id=__codelineno-17-9 name=__codelineno-17-9 href=#__codelineno-17-9></a>    {&quot;a&quot;: &quot;G&quot;, &quot;b&quot;: 19}, {&quot;a&quot;: &quot;H&quot;, &quot;b&quot;: 87}, {&quot;a&quot;: &quot;I&quot;, &quot;b&quot;: 52}
+</span><span id=__span-17-10><a id=__codelineno-17-10 name=__codelineno-17-10 href=#__codelineno-17-10></a>    ]
+</span><span id=__span-17-11><a id=__codelineno-17-11 name=__codelineno-17-11 href=#__codelineno-17-11></a>},
+</span><span id=__span-17-12><a id=__codelineno-17-12 name=__codelineno-17-12 href=#__codelineno-17-12></a>&quot;mark&quot;: &quot;bar&quot;,
+</span><span id=__span-17-13><a id=__codelineno-17-13 name=__codelineno-17-13 href=#__codelineno-17-13></a>&quot;encoding&quot;: {
+</span><span id=__span-17-14><a id=__codelineno-17-14 name=__codelineno-17-14 href=#__codelineno-17-14></a>    &quot;x&quot;: {&quot;field&quot;: &quot;a&quot;, &quot;type&quot;: &quot;nominal&quot;, &quot;axis&quot;: {&quot;labelAngle&quot;: 0}},
+</span><span id=__span-17-15><a id=__codelineno-17-15 name=__codelineno-17-15 href=#__codelineno-17-15></a>    &quot;y&quot;: {&quot;field&quot;: &quot;b&quot;, &quot;type&quot;: &quot;quantitative&quot;}
+</span><span id=__span-17-16><a id=__codelineno-17-16 name=__codelineno-17-16 href=#__codelineno-17-16></a>}
+</span><span id=__span-17-17><a id=__codelineno-17-17 name=__codelineno-17-17 href=#__codelineno-17-17></a>}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-18-1><a id=__codelineno-18-1 name=__codelineno-18-1 href=#__codelineno-18-1></a>{
+</span><span id=__span-18-2><a id=__codelineno-18-2 name=__codelineno-18-2 href=#__codelineno-18-2></a>&quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v4.json&quot;,
+</span><span id=__span-18-3><a id=__codelineno-18-3 name=__codelineno-18-3 href=#__codelineno-18-3></a>&quot;description&quot;: &quot;A simple bar chart with embedded data.&quot;,
+</span><span id=__span-18-4><a id=__codelineno-18-4 name=__codelineno-18-4 href=#__codelineno-18-4></a>&quot;width&quot;: 500,
+</span><span id=__span-18-5><a id=__codelineno-18-5 name=__codelineno-18-5 href=#__codelineno-18-5></a>&quot;data&quot;: {
+</span><span id=__span-18-6><a id=__codelineno-18-6 name=__codelineno-18-6 href=#__codelineno-18-6></a>    &quot;values&quot;: [
+</span><span id=__span-18-7><a id=__codelineno-18-7 name=__codelineno-18-7 href=#__codelineno-18-7></a>    {&quot;a&quot;: &quot;A&quot;, &quot;b&quot;: 28}, {&quot;a&quot;: &quot;B&quot;, &quot;b&quot;: 55}, {&quot;a&quot;: &quot;C&quot;, &quot;b&quot;: 43},
+</span><span id=__span-18-8><a id=__codelineno-18-8 name=__codelineno-18-8 href=#__codelineno-18-8></a>    {&quot;a&quot;: &quot;D&quot;, &quot;b&quot;: 91}, {&quot;a&quot;: &quot;E&quot;, &quot;b&quot;: 81}, {&quot;a&quot;: &quot;F&quot;, &quot;b&quot;: 53},
+</span><span id=__span-18-9><a id=__codelineno-18-9 name=__codelineno-18-9 href=#__codelineno-18-9></a>    {&quot;a&quot;: &quot;G&quot;, &quot;b&quot;: 19}, {&quot;a&quot;: &quot;H&quot;, &quot;b&quot;: 87}, {&quot;a&quot;: &quot;I&quot;, &quot;b&quot;: 52}
+</span><span id=__span-18-10><a id=__codelineno-18-10 name=__codelineno-18-10 href=#__codelineno-18-10></a>    ]
+</span><span id=__span-18-11><a id=__codelineno-18-11 name=__codelineno-18-11 href=#__codelineno-18-11></a>},
+</span><span id=__span-18-12><a id=__codelineno-18-12 name=__codelineno-18-12 href=#__codelineno-18-12></a>&quot;mark&quot;: &quot;line&quot;,
+</span><span id=__span-18-13><a id=__codelineno-18-13 name=__codelineno-18-13 href=#__codelineno-18-13></a>&quot;encoding&quot;: {
+</span><span id=__span-18-14><a id=__codelineno-18-14 name=__codelineno-18-14 href=#__codelineno-18-14></a>    &quot;x&quot;: {&quot;field&quot;: &quot;a&quot;, &quot;type&quot;: &quot;nominal&quot;, &quot;axis&quot;: {&quot;labelAngle&quot;: 0}},
+</span><span id=__span-18-15><a id=__codelineno-18-15 name=__codelineno-18-15 href=#__codelineno-18-15></a>    &quot;y&quot;: {&quot;field&quot;: &quot;b&quot;, &quot;type&quot;: &quot;quantitative&quot;}
+</span><span id=__span-18-16><a id=__codelineno-18-16 name=__codelineno-18-16 href=#__codelineno-18-16></a>}
+</span><span id=__span-18-17><a id=__codelineno-18-17 name=__codelineno-18-17 href=#__codelineno-18-17></a>}
+</span></code></pre></div> <div class="language-text highlight"><pre><span></span><code><span id=__span-19-1><a id=__codelineno-19-1 name=__codelineno-19-1 href=#__codelineno-19-1></a>{
+</span><span id=__span-19-2><a id=__codelineno-19-2 name=__codelineno-19-2 href=#__codelineno-19-2></a>  &quot;$schema&quot;: &quot;https://vega.github.io/schema/vega-lite/v5.json&quot;,
+</span><span id=__span-19-3><a id=__codelineno-19-3 name=__codelineno-19-3 href=#__codelineno-19-3></a>  &quot;width&quot;: 500,
+</span><span id=__span-19-4><a id=__codelineno-19-4 name=__codelineno-19-4 href=#__codelineno-19-4></a>  &quot;data&quot;: {
+</span><span id=__span-19-5><a id=__codelineno-19-5 name=__codelineno-19-5 href=#__codelineno-19-5></a>    &quot;values&quot;: [
+</span><span id=__span-19-6><a id=__codelineno-19-6 name=__codelineno-19-6 href=#__codelineno-19-6></a>      {
+</span><span id=__span-19-7><a id=__codelineno-19-7 name=__codelineno-19-7 href=#__codelineno-19-7></a>        &quot;value&quot;: 0.5026,
+</span><span id=__span-19-8><a id=__codelineno-19-8 name=__codelineno-19-8 href=#__codelineno-19-8></a>        &quot;serie&quot;: &quot;bts&quot;,
+</span><span id=__span-19-9><a id=__codelineno-19-9 name=__codelineno-19-9 href=#__codelineno-19-9></a>        &quot;category&quot;: &quot;facebook&quot;,
+</span><span id=__span-19-10><a id=__codelineno-19-10 name=__codelineno-19-10 href=#__codelineno-19-10></a>        &quot;color&quot;: &quot;#2ccce4&quot;
+</span><span id=__span-19-11><a id=__codelineno-19-11 name=__codelineno-19-11 href=#__codelineno-19-11></a>      },
+</span><span id=__span-19-12><a id=__codelineno-19-12 name=__codelineno-19-12 href=#__codelineno-19-12></a>      {
+</span><span id=__span-19-13><a id=__codelineno-19-13 name=__codelineno-19-13 href=#__codelineno-19-13></a>        &quot;value&quot;: 0.357,
+</span><span id=__span-19-14><a id=__codelineno-19-14 name=__codelineno-19-14 href=#__codelineno-19-14></a>        &quot;serie&quot;: &quot;jungkook&quot;,
+</span><span id=__span-19-15><a id=__codelineno-19-15 name=__codelineno-19-15 href=#__codelineno-19-15></a>        &quot;category&quot;: &quot;facebook&quot;,
+</span><span id=__span-19-16><a id=__codelineno-19-16 name=__codelineno-19-16 href=#__codelineno-19-16></a>        &quot;color&quot;: &quot;#f47373&quot;
+</span><span id=__span-19-17><a id=__codelineno-19-17 name=__codelineno-19-17 href=#__codelineno-19-17></a>      },
+</span><span id=__span-19-18><a id=__codelineno-19-18 name=__codelineno-19-18 href=#__codelineno-19-18></a>      {
+</span><span id=__span-19-19><a id=__codelineno-19-19 name=__codelineno-19-19 href=#__codelineno-19-19></a>        &quot;value&quot;: 0.0967,
+</span><span id=__span-19-20><a id=__codelineno-19-20 name=__codelineno-19-20 href=#__codelineno-19-20></a>        &quot;serie&quot;: &quot;jimin&quot;,
+</span><span id=__span-19-21><a id=__codelineno-19-21 name=__codelineno-19-21 href=#__codelineno-19-21></a>        &quot;category&quot;: &quot;facebook&quot;,
+</span><span id=__span-19-22><a id=__codelineno-19-22 name=__codelineno-19-22 href=#__codelineno-19-22></a>        &quot;color&quot;: &quot;#37d67a&quot;
+</span><span id=__span-19-23><a id=__codelineno-19-23 name=__codelineno-19-23 href=#__codelineno-19-23></a>      },
+</span><span id=__span-19-24><a id=__codelineno-19-24 name=__codelineno-19-24 href=#__codelineno-19-24></a>      {
+</span><span id=__span-19-25><a id=__codelineno-19-25 name=__codelineno-19-25 href=#__codelineno-19-25></a>        &quot;value&quot;: 0.0437,
+</span><span id=__span-19-26><a id=__codelineno-19-26 name=__codelineno-19-26 href=#__codelineno-19-26></a>        &quot;serie&quot;: &quot;butter&quot;,
+</span><span id=__span-19-27><a id=__codelineno-19-27 name=__codelineno-19-27 href=#__codelineno-19-27></a>        &quot;category&quot;: &quot;facebook&quot;,
+</span><span id=__span-19-28><a id=__codelineno-19-28 name=__codelineno-19-28 href=#__codelineno-19-28></a>        &quot;color&quot;: &quot;#dce775&quot;
+</span><span id=__span-19-29><a id=__codelineno-19-29 name=__codelineno-19-29 href=#__codelineno-19-29></a>      },
+</span><span id=__span-19-30><a id=__codelineno-19-30 name=__codelineno-19-30 href=#__codelineno-19-30></a>      {
+</span><span id=__span-19-31><a id=__codelineno-19-31 name=__codelineno-19-31 href=#__codelineno-19-31></a>        &quot;value&quot;: 0.7923,
+</span><span id=__span-19-32><a id=__codelineno-19-32 name=__codelineno-19-32 href=#__codelineno-19-32></a>        &quot;serie&quot;: &quot;bts&quot;,
+</span><span id=__span-19-33><a id=__codelineno-19-33 name=__codelineno-19-33 href=#__codelineno-19-33></a>        &quot;category&quot;: &quot;news&quot;,
+</span><span id=__span-19-34><a id=__codelineno-19-34 name=__codelineno-19-34 href=#__codelineno-19-34></a>        &quot;color&quot;: &quot;#2ccce4&quot;
+</span><span id=__span-19-35><a id=__codelineno-19-35 name=__codelineno-19-35 href=#__codelineno-19-35></a>      },
+</span><span id=__span-19-36><a id=__codelineno-19-36 name=__codelineno-19-36 href=#__codelineno-19-36></a>      {
+</span><span id=__span-19-37><a id=__codelineno-19-37 name=__codelineno-19-37 href=#__codelineno-19-37></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-38><a id=__codelineno-19-38 name=__codelineno-19-38 href=#__codelineno-19-38></a>        &quot;serie&quot;: &quot;jungkook&quot;,
+</span><span id=__span-19-39><a id=__codelineno-19-39 name=__codelineno-19-39 href=#__codelineno-19-39></a>        &quot;category&quot;: &quot;news&quot;,
+</span><span id=__span-19-40><a id=__codelineno-19-40 name=__codelineno-19-40 href=#__codelineno-19-40></a>        &quot;color&quot;: &quot;#f47373&quot;
+</span><span id=__span-19-41><a id=__codelineno-19-41 name=__codelineno-19-41 href=#__codelineno-19-41></a>      },
+</span><span id=__span-19-42><a id=__codelineno-19-42 name=__codelineno-19-42 href=#__codelineno-19-42></a>      {
+</span><span id=__span-19-43><a id=__codelineno-19-43 name=__codelineno-19-43 href=#__codelineno-19-43></a>        &quot;value&quot;: 0.0231,
+</span><span id=__span-19-44><a id=__codelineno-19-44 name=__codelineno-19-44 href=#__codelineno-19-44></a>        &quot;serie&quot;: &quot;jimin&quot;,
+</span><span id=__span-19-45><a id=__codelineno-19-45 name=__codelineno-19-45 href=#__codelineno-19-45></a>        &quot;category&quot;: &quot;news&quot;,
+</span><span id=__span-19-46><a id=__codelineno-19-46 name=__codelineno-19-46 href=#__codelineno-19-46></a>        &quot;color&quot;: &quot;#37d67a&quot;
+</span><span id=__span-19-47><a id=__codelineno-19-47 name=__codelineno-19-47 href=#__codelineno-19-47></a>      },
+</span><span id=__span-19-48><a id=__codelineno-19-48 name=__codelineno-19-48 href=#__codelineno-19-48></a>      {
+</span><span id=__span-19-49><a id=__codelineno-19-49 name=__codelineno-19-49 href=#__codelineno-19-49></a>        &quot;value&quot;: 0.1846,
+</span><span id=__span-19-50><a id=__codelineno-19-50 name=__codelineno-19-50 href=#__codelineno-19-50></a>        &quot;serie&quot;: &quot;butter&quot;,
+</span><span id=__span-19-51><a id=__codelineno-19-51 name=__codelineno-19-51 href=#__codelineno-19-51></a>        &quot;category&quot;: &quot;news&quot;,
+</span><span id=__span-19-52><a id=__codelineno-19-52 name=__codelineno-19-52 href=#__codelineno-19-52></a>        &quot;color&quot;: &quot;#dce775&quot;
+</span><span id=__span-19-53><a id=__codelineno-19-53 name=__codelineno-19-53 href=#__codelineno-19-53></a>      },
+</span><span id=__span-19-54><a id=__codelineno-19-54 name=__codelineno-19-54 href=#__codelineno-19-54></a>      {
+</span><span id=__span-19-55><a id=__codelineno-19-55 name=__codelineno-19-55 href=#__codelineno-19-55></a>        &quot;value&quot;: 0.6569,
+</span><span id=__span-19-56><a id=__codelineno-19-56 name=__codelineno-19-56 href=#__codelineno-19-56></a>        &quot;serie&quot;: &quot;bts&quot;,
+</span><span id=__span-19-57><a id=__codelineno-19-57 name=__codelineno-19-57 href=#__codelineno-19-57></a>        &quot;category&quot;: &quot;twitter&quot;,
+</span><span id=__span-19-58><a id=__codelineno-19-58 name=__codelineno-19-58 href=#__codelineno-19-58></a>        &quot;color&quot;: &quot;#2ccce4&quot;
+</span><span id=__span-19-59><a id=__codelineno-19-59 name=__codelineno-19-59 href=#__codelineno-19-59></a>      },
+</span><span id=__span-19-60><a id=__codelineno-19-60 name=__codelineno-19-60 href=#__codelineno-19-60></a>      {
+</span><span id=__span-19-61><a id=__codelineno-19-61 name=__codelineno-19-61 href=#__codelineno-19-61></a>        &quot;value&quot;: 0.0511,
+</span><span id=__span-19-62><a id=__codelineno-19-62 name=__codelineno-19-62 href=#__codelineno-19-62></a>        &quot;serie&quot;: &quot;jungkook&quot;,
+</span><span id=__span-19-63><a id=__codelineno-19-63 name=__codelineno-19-63 href=#__codelineno-19-63></a>        &quot;category&quot;: &quot;twitter&quot;,
+</span><span id=__span-19-64><a id=__codelineno-19-64 name=__codelineno-19-64 href=#__codelineno-19-64></a>        &quot;color&quot;: &quot;#f47373&quot;
+</span><span id=__span-19-65><a id=__codelineno-19-65 name=__codelineno-19-65 href=#__codelineno-19-65></a>      },
+</span><span id=__span-19-66><a id=__codelineno-19-66 name=__codelineno-19-66 href=#__codelineno-19-66></a>      {
+</span><span id=__span-19-67><a id=__codelineno-19-67 name=__codelineno-19-67 href=#__codelineno-19-67></a>        &quot;value&quot;: 0.0949,
+</span><span id=__span-19-68><a id=__codelineno-19-68 name=__codelineno-19-68 href=#__codelineno-19-68></a>        &quot;serie&quot;: &quot;jimin&quot;,
+</span><span id=__span-19-69><a id=__codelineno-19-69 name=__codelineno-19-69 href=#__codelineno-19-69></a>        &quot;category&quot;: &quot;twitter&quot;,
+</span><span id=__span-19-70><a id=__codelineno-19-70 name=__codelineno-19-70 href=#__codelineno-19-70></a>        &quot;color&quot;: &quot;#37d67a&quot;
+</span><span id=__span-19-71><a id=__codelineno-19-71 name=__codelineno-19-71 href=#__codelineno-19-71></a>      },
+</span><span id=__span-19-72><a id=__codelineno-19-72 name=__codelineno-19-72 href=#__codelineno-19-72></a>      {
+</span><span id=__span-19-73><a id=__codelineno-19-73 name=__codelineno-19-73 href=#__codelineno-19-73></a>        &quot;value&quot;: 0.1971,
+</span><span id=__span-19-74><a id=__codelineno-19-74 name=__codelineno-19-74 href=#__codelineno-19-74></a>        &quot;serie&quot;: &quot;butter&quot;,
+</span><span id=__span-19-75><a id=__codelineno-19-75 name=__codelineno-19-75 href=#__codelineno-19-75></a>        &quot;category&quot;: &quot;twitter&quot;,
+</span><span id=__span-19-76><a id=__codelineno-19-76 name=__codelineno-19-76 href=#__codelineno-19-76></a>        &quot;color&quot;: &quot;#dce775&quot;
+</span><span id=__span-19-77><a id=__codelineno-19-77 name=__codelineno-19-77 href=#__codelineno-19-77></a>      },
+</span><span id=__span-19-78><a id=__codelineno-19-78 name=__codelineno-19-78 href=#__codelineno-19-78></a>      {
+</span><span id=__span-19-79><a id=__codelineno-19-79 name=__codelineno-19-79 href=#__codelineno-19-79></a>        &quot;value&quot;: 1,
+</span><span id=__span-19-80><a id=__codelineno-19-80 name=__codelineno-19-80 href=#__codelineno-19-80></a>        &quot;serie&quot;: &quot;bts&quot;,
+</span><span id=__span-19-81><a id=__codelineno-19-81 name=__codelineno-19-81 href=#__codelineno-19-81></a>        &quot;category&quot;: &quot;blog&quot;,
+</span><span id=__span-19-82><a id=__codelineno-19-82 name=__codelineno-19-82 href=#__codelineno-19-82></a>        &quot;color&quot;: &quot;#2ccce4&quot;
+</span><span id=__span-19-83><a id=__codelineno-19-83 name=__codelineno-19-83 href=#__codelineno-19-83></a>      },
+</span><span id=__span-19-84><a id=__codelineno-19-84 name=__codelineno-19-84 href=#__codelineno-19-84></a>      {
+</span><span id=__span-19-85><a id=__codelineno-19-85 name=__codelineno-19-85 href=#__codelineno-19-85></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-86><a id=__codelineno-19-86 name=__codelineno-19-86 href=#__codelineno-19-86></a>        &quot;serie&quot;: &quot;jungkook&quot;,
+</span><span id=__span-19-87><a id=__codelineno-19-87 name=__codelineno-19-87 href=#__codelineno-19-87></a>        &quot;category&quot;: &quot;blog&quot;,
+</span><span id=__span-19-88><a id=__codelineno-19-88 name=__codelineno-19-88 href=#__codelineno-19-88></a>        &quot;color&quot;: &quot;#f47373&quot;
+</span><span id=__span-19-89><a id=__codelineno-19-89 name=__codelineno-19-89 href=#__codelineno-19-89></a>      },
+</span><span id=__span-19-90><a id=__codelineno-19-90 name=__codelineno-19-90 href=#__codelineno-19-90></a>      {
+</span><span id=__span-19-91><a id=__codelineno-19-91 name=__codelineno-19-91 href=#__codelineno-19-91></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-92><a id=__codelineno-19-92 name=__codelineno-19-92 href=#__codelineno-19-92></a>        &quot;serie&quot;: &quot;jimin&quot;,
+</span><span id=__span-19-93><a id=__codelineno-19-93 name=__codelineno-19-93 href=#__codelineno-19-93></a>        &quot;category&quot;: &quot;blog&quot;,
+</span><span id=__span-19-94><a id=__codelineno-19-94 name=__codelineno-19-94 href=#__codelineno-19-94></a>        &quot;color&quot;: &quot;#37d67a&quot;
+</span><span id=__span-19-95><a id=__codelineno-19-95 name=__codelineno-19-95 href=#__codelineno-19-95></a>      },
+</span><span id=__span-19-96><a id=__codelineno-19-96 name=__codelineno-19-96 href=#__codelineno-19-96></a>      {
+</span><span id=__span-19-97><a id=__codelineno-19-97 name=__codelineno-19-97 href=#__codelineno-19-97></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-98><a id=__codelineno-19-98 name=__codelineno-19-98 href=#__codelineno-19-98></a>        &quot;serie&quot;: &quot;butter&quot;,
+</span><span id=__span-19-99><a id=__codelineno-19-99 name=__codelineno-19-99 href=#__codelineno-19-99></a>        &quot;category&quot;: &quot;blog&quot;,
+</span><span id=__span-19-100><a id=__codelineno-19-100 name=__codelineno-19-100 href=#__codelineno-19-100></a>        &quot;color&quot;: &quot;#dce775&quot;
+</span><span id=__span-19-101><a id=__codelineno-19-101 name=__codelineno-19-101 href=#__codelineno-19-101></a>      },
+</span><span id=__span-19-102><a id=__codelineno-19-102 name=__codelineno-19-102 href=#__codelineno-19-102></a>      {
+</span><span id=__span-19-103><a id=__codelineno-19-103 name=__codelineno-19-103 href=#__codelineno-19-103></a>        &quot;value&quot;: 1,
+</span><span id=__span-19-104><a id=__codelineno-19-104 name=__codelineno-19-104 href=#__codelineno-19-104></a>        &quot;serie&quot;: &quot;bts&quot;,
+</span><span id=__span-19-105><a id=__codelineno-19-105 name=__codelineno-19-105 href=#__codelineno-19-105></a>        &quot;category&quot;: &quot;instagram&quot;,
+</span><span id=__span-19-106><a id=__codelineno-19-106 name=__codelineno-19-106 href=#__codelineno-19-106></a>        &quot;color&quot;: &quot;#2ccce4&quot;
+</span><span id=__span-19-107><a id=__codelineno-19-107 name=__codelineno-19-107 href=#__codelineno-19-107></a>      },
+</span><span id=__span-19-108><a id=__codelineno-19-108 name=__codelineno-19-108 href=#__codelineno-19-108></a>      {
+</span><span id=__span-19-109><a id=__codelineno-19-109 name=__codelineno-19-109 href=#__codelineno-19-109></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-110><a id=__codelineno-19-110 name=__codelineno-19-110 href=#__codelineno-19-110></a>        &quot;serie&quot;: &quot;jungkook&quot;,
+</span><span id=__span-19-111><a id=__codelineno-19-111 name=__codelineno-19-111 href=#__codelineno-19-111></a>        &quot;category&quot;: &quot;instagram&quot;,
+</span><span id=__span-19-112><a id=__codelineno-19-112 name=__codelineno-19-112 href=#__codelineno-19-112></a>        &quot;color&quot;: &quot;#f47373&quot;
+</span><span id=__span-19-113><a id=__codelineno-19-113 name=__codelineno-19-113 href=#__codelineno-19-113></a>      },
+</span><span id=__span-19-114><a id=__codelineno-19-114 name=__codelineno-19-114 href=#__codelineno-19-114></a>      {
+</span><span id=__span-19-115><a id=__codelineno-19-115 name=__codelineno-19-115 href=#__codelineno-19-115></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-116><a id=__codelineno-19-116 name=__codelineno-19-116 href=#__codelineno-19-116></a>        &quot;serie&quot;: &quot;jimin&quot;,
+</span><span id=__span-19-117><a id=__codelineno-19-117 name=__codelineno-19-117 href=#__codelineno-19-117></a>        &quot;category&quot;: &quot;instagram&quot;,
+</span><span id=__span-19-118><a id=__codelineno-19-118 name=__codelineno-19-118 href=#__codelineno-19-118></a>        &quot;color&quot;: &quot;#37d67a&quot;
+</span><span id=__span-19-119><a id=__codelineno-19-119 name=__codelineno-19-119 href=#__codelineno-19-119></a>      },
+</span><span id=__span-19-120><a id=__codelineno-19-120 name=__codelineno-19-120 href=#__codelineno-19-120></a>      {
+</span><span id=__span-19-121><a id=__codelineno-19-121 name=__codelineno-19-121 href=#__codelineno-19-121></a>        &quot;value&quot;: 0,
+</span><span id=__span-19-122><a id=__codelineno-19-122 name=__codelineno-19-122 href=#__codelineno-19-122></a>        &quot;serie&quot;: &quot;butter&quot;,
+</span><span id=__span-19-123><a id=__codelineno-19-123 name=__codelineno-19-123 href=#__codelineno-19-123></a>        &quot;category&quot;: &quot;instagram&quot;,
+</span><span id=__span-19-124><a id=__codelineno-19-124 name=__codelineno-19-124 href=#__codelineno-19-124></a>        &quot;color&quot;: &quot;#dce775&quot;
+</span><span id=__span-19-125><a id=__codelineno-19-125 name=__codelineno-19-125 href=#__codelineno-19-125></a>      }
+</span><span id=__span-19-126><a id=__codelineno-19-126 name=__codelineno-19-126 href=#__codelineno-19-126></a>    ]
+</span><span id=__span-19-127><a id=__codelineno-19-127 name=__codelineno-19-127 href=#__codelineno-19-127></a>  },
+</span><span id=__span-19-128><a id=__codelineno-19-128 name=__codelineno-19-128 href=#__codelineno-19-128></a>  &quot;title&quot;: {},
+</span><span id=__span-19-129><a id=__codelineno-19-129 name=__codelineno-19-129 href=#__codelineno-19-129></a>  &quot;encoding&quot;: {
+</span><span id=__span-19-130><a id=__codelineno-19-130 name=__codelineno-19-130 href=#__codelineno-19-130></a>    &quot;y&quot;: {
+</span><span id=__span-19-131><a id=__codelineno-19-131 name=__codelineno-19-131 href=#__codelineno-19-131></a>      &quot;field&quot;: &quot;category&quot;,
+</span><span id=__span-19-132><a id=__codelineno-19-132 name=__codelineno-19-132 href=#__codelineno-19-132></a>      &quot;axis&quot;: {
+</span><span id=__span-19-133><a id=__codelineno-19-133 name=__codelineno-19-133 href=#__codelineno-19-133></a>        &quot;title&quot;: null
+</span><span id=__span-19-134><a id=__codelineno-19-134 name=__codelineno-19-134 href=#__codelineno-19-134></a>      }
+</span><span id=__span-19-135><a id=__codelineno-19-135 name=__codelineno-19-135 href=#__codelineno-19-135></a>    },
+</span><span id=__span-19-136><a id=__codelineno-19-136 name=__codelineno-19-136 href=#__codelineno-19-136></a>    &quot;x&quot;: {
+</span><span id=__span-19-137><a id=__codelineno-19-137 name=__codelineno-19-137 href=#__codelineno-19-137></a>      &quot;aggregate&quot;: &quot;sum&quot;,
+</span><span id=__span-19-138><a id=__codelineno-19-138 name=__codelineno-19-138 href=#__codelineno-19-138></a>      &quot;stack&quot;: &quot;normalize&quot;,
+</span><span id=__span-19-139><a id=__codelineno-19-139 name=__codelineno-19-139 href=#__codelineno-19-139></a>      &quot;field&quot;: &quot;value&quot;,
+</span><span id=__span-19-140><a id=__codelineno-19-140 name=__codelineno-19-140 href=#__codelineno-19-140></a>      &quot;axis&quot;: {
+</span><span id=__span-19-141><a id=__codelineno-19-141 name=__codelineno-19-141 href=#__codelineno-19-141></a>        &quot;title&quot;: null,
+</span><span id=__span-19-142><a id=__codelineno-19-142 name=__codelineno-19-142 href=#__codelineno-19-142></a>        &quot;grid&quot;: false
+</span><span id=__span-19-143><a id=__codelineno-19-143 name=__codelineno-19-143 href=#__codelineno-19-143></a>      }
+</span><span id=__span-19-144><a id=__codelineno-19-144 name=__codelineno-19-144 href=#__codelineno-19-144></a>    }
+</span><span id=__span-19-145><a id=__codelineno-19-145 name=__codelineno-19-145 href=#__codelineno-19-145></a>  },
+</span><span id=__span-19-146><a id=__codelineno-19-146 name=__codelineno-19-146 href=#__codelineno-19-146></a>  &quot;layer&quot;: [
+</span><span id=__span-19-147><a id=__codelineno-19-147 name=__codelineno-19-147 href=#__codelineno-19-147></a>    {
+</span><span id=__span-19-148><a id=__codelineno-19-148 name=__codelineno-19-148 href=#__codelineno-19-148></a>      &quot;mark&quot;: {
+</span><span id=__span-19-149><a id=__codelineno-19-149 name=__codelineno-19-149 href=#__codelineno-19-149></a>        &quot;type&quot;: &quot;bar&quot;
+</span><span id=__span-19-150><a id=__codelineno-19-150 name=__codelineno-19-150 href=#__codelineno-19-150></a>      },
+</span><span id=__span-19-151><a id=__codelineno-19-151 name=__codelineno-19-151 href=#__codelineno-19-151></a>      &quot;encoding&quot;: {
+</span><span id=__span-19-152><a id=__codelineno-19-152 name=__codelineno-19-152 href=#__codelineno-19-152></a>        &quot;color&quot;: {
+</span><span id=__span-19-153><a id=__codelineno-19-153 name=__codelineno-19-153 href=#__codelineno-19-153></a>          &quot;field&quot;: &quot;serie&quot;,
+</span><span id=__span-19-154><a id=__codelineno-19-154 name=__codelineno-19-154 href=#__codelineno-19-154></a>          &quot;scale&quot;: {
+</span><span id=__span-19-155><a id=__codelineno-19-155 name=__codelineno-19-155 href=#__codelineno-19-155></a>            &quot;range&quot;: [&quot;#2ccce4&quot;, &quot;#dce775&quot;, &quot;#37d67a&quot;, &quot;#f47373&quot;]
+</span><span id=__span-19-156><a id=__codelineno-19-156 name=__codelineno-19-156 href=#__codelineno-19-156></a>          },
+</span><span id=__span-19-157><a id=__codelineno-19-157 name=__codelineno-19-157 href=#__codelineno-19-157></a>          &quot;legend&quot;: null
+</span><span id=__span-19-158><a id=__codelineno-19-158 name=__codelineno-19-158 href=#__codelineno-19-158></a>        },
+</span><span id=__span-19-159><a id=__codelineno-19-159 name=__codelineno-19-159 href=#__codelineno-19-159></a>        &quot;tooltip&quot;: [
+</span><span id=__span-19-160><a id=__codelineno-19-160 name=__codelineno-19-160 href=#__codelineno-19-160></a>          {
+</span><span id=__span-19-161><a id=__codelineno-19-161 name=__codelineno-19-161 href=#__codelineno-19-161></a>            &quot;field&quot;: &quot;category&quot;,
+</span><span id=__span-19-162><a id=__codelineno-19-162 name=__codelineno-19-162 href=#__codelineno-19-162></a>            &quot;type&quot;: &quot;nominal&quot;
+</span><span id=__span-19-163><a id=__codelineno-19-163 name=__codelineno-19-163 href=#__codelineno-19-163></a>          },
+</span><span id=__span-19-164><a id=__codelineno-19-164 name=__codelineno-19-164 href=#__codelineno-19-164></a>          {
+</span><span id=__span-19-165><a id=__codelineno-19-165 name=__codelineno-19-165 href=#__codelineno-19-165></a>            &quot;field&quot;: &quot;value&quot;,
+</span><span id=__span-19-166><a id=__codelineno-19-166 name=__codelineno-19-166 href=#__codelineno-19-166></a>            &quot;type&quot;: &quot;quantitative&quot;,
+</span><span id=__span-19-167><a id=__codelineno-19-167 name=__codelineno-19-167 href=#__codelineno-19-167></a>            &quot;aggregate&quot;: &quot;sum&quot;,
+</span><span id=__span-19-168><a id=__codelineno-19-168 name=__codelineno-19-168 href=#__codelineno-19-168></a>            &quot;format&quot;: &quot;.2%&quot;
+</span><span id=__span-19-169><a id=__codelineno-19-169 name=__codelineno-19-169 href=#__codelineno-19-169></a>          },
+</span><span id=__span-19-170><a id=__codelineno-19-170 name=__codelineno-19-170 href=#__codelineno-19-170></a>          {
+</span><span id=__span-19-171><a id=__codelineno-19-171 name=__codelineno-19-171 href=#__codelineno-19-171></a>            &quot;field&quot;: &quot;serie&quot;,
+</span><span id=__span-19-172><a id=__codelineno-19-172 name=__codelineno-19-172 href=#__codelineno-19-172></a>            &quot;type&quot;: &quot;nominal&quot;
+</span><span id=__span-19-173><a id=__codelineno-19-173 name=__codelineno-19-173 href=#__codelineno-19-173></a>          }
+</span><span id=__span-19-174><a id=__codelineno-19-174 name=__codelineno-19-174 href=#__codelineno-19-174></a>        ]
+</span><span id=__span-19-175><a id=__codelineno-19-175 name=__codelineno-19-175 href=#__codelineno-19-175></a>      }
+</span><span id=__span-19-176><a id=__codelineno-19-176 name=__codelineno-19-176 href=#__codelineno-19-176></a>    },
+</span><span id=__span-19-177><a id=__codelineno-19-177 name=__codelineno-19-177 href=#__codelineno-19-177></a>    {
+</span><span id=__span-19-178><a id=__codelineno-19-178 name=__codelineno-19-178 href=#__codelineno-19-178></a>      &quot;mark&quot;: {
+</span><span id=__span-19-179><a id=__codelineno-19-179 name=__codelineno-19-179 href=#__codelineno-19-179></a>        &quot;type&quot;: &quot;text&quot;,
+</span><span id=__span-19-180><a id=__codelineno-19-180 name=__codelineno-19-180 href=#__codelineno-19-180></a>        &quot;dx&quot;: -3,
+</span><span id=__span-19-181><a id=__codelineno-19-181 name=__codelineno-19-181 href=#__codelineno-19-181></a>        &quot;align&quot;: &quot;right&quot;,
+</span><span id=__span-19-182><a id=__codelineno-19-182 name=__codelineno-19-182 href=#__codelineno-19-182></a>        &quot;color&quot;: &quot;#000&quot;,
+</span><span id=__span-19-183><a id=__codelineno-19-183 name=__codelineno-19-183 href=#__codelineno-19-183></a>        &quot;fontSize&quot;: 11
+</span><span id=__span-19-184><a id=__codelineno-19-184 name=__codelineno-19-184 href=#__codelineno-19-184></a>      },
+</span><span id=__span-19-185><a id=__codelineno-19-185 name=__codelineno-19-185 href=#__codelineno-19-185></a>      &quot;encoding&quot;: {
+</span><span id=__span-19-186><a id=__codelineno-19-186 name=__codelineno-19-186 href=#__codelineno-19-186></a>        &quot;detail&quot;: {
+</span><span id=__span-19-187><a id=__codelineno-19-187 name=__codelineno-19-187 href=#__codelineno-19-187></a>          &quot;field&quot;: &quot;serie&quot;
+</span><span id=__span-19-188><a id=__codelineno-19-188 name=__codelineno-19-188 href=#__codelineno-19-188></a>        },
+</span><span id=__span-19-189><a id=__codelineno-19-189 name=__codelineno-19-189 href=#__codelineno-19-189></a>        &quot;text&quot;: {
+</span><span id=__span-19-190><a id=__codelineno-19-190 name=__codelineno-19-190 href=#__codelineno-19-190></a>          &quot;condition&quot;: {
+</span><span id=__span-19-191><a id=__codelineno-19-191 name=__codelineno-19-191 href=#__codelineno-19-191></a>            &quot;test&quot;: &quot;datum.value &gt; 0.05&quot;,
+</span><span id=__span-19-192><a id=__codelineno-19-192 name=__codelineno-19-192 href=#__codelineno-19-192></a>            &quot;type&quot;: &quot;quantitative&quot;,
+</span><span id=__span-19-193><a id=__codelineno-19-193 name=__codelineno-19-193 href=#__codelineno-19-193></a>            &quot;aggregate&quot;: &quot;sum&quot;,
+</span><span id=__span-19-194><a id=__codelineno-19-194 name=__codelineno-19-194 href=#__codelineno-19-194></a>            &quot;field&quot;: &quot;value&quot;,
+</span><span id=__span-19-195><a id=__codelineno-19-195 name=__codelineno-19-195 href=#__codelineno-19-195></a>            &quot;format&quot;: &quot;.2%&quot;
+</span><span id=__span-19-196><a id=__codelineno-19-196 name=__codelineno-19-196 href=#__codelineno-19-196></a>          },
+</span><span id=__span-19-197><a id=__codelineno-19-197 name=__codelineno-19-197 href=#__codelineno-19-197></a>          &quot;value&quot;: &quot;&quot;
+</span><span id=__span-19-198><a id=__codelineno-19-198 name=__codelineno-19-198 href=#__codelineno-19-198></a>        }
+</span><span id=__span-19-199><a id=__codelineno-19-199 name=__codelineno-19-199 href=#__codelineno-19-199></a>      }
+</span><span id=__span-19-200><a id=__codelineno-19-200 name=__codelineno-19-200 href=#__codelineno-19-200></a>    }
+</span><span id=__span-19-201><a id=__codelineno-19-201 name=__codelineno-19-201 href=#__codelineno-19-201></a>  ],
+</span><span id=__span-19-202><a id=__codelineno-19-202 name=__codelineno-19-202 href=#__codelineno-19-202></a>  &quot;config&quot;: {
+</span><span id=__span-19-203><a id=__codelineno-19-203 name=__codelineno-19-203 href=#__codelineno-19-203></a>    &quot;view&quot;: {
+</span><span id=__span-19-204><a id=__codelineno-19-204 name=__codelineno-19-204 href=#__codelineno-19-204></a>      &quot;stroke&quot;: &quot;transparent&quot;
+</span><span id=__span-19-205><a id=__codelineno-19-205 name=__codelineno-19-205 href=#__codelineno-19-205></a>    },
+</span><span id=__span-19-206><a id=__codelineno-19-206 name=__codelineno-19-206 href=#__codelineno-19-206></a>    &quot;axis&quot;: {
+</span><span id=__span-19-207><a id=__codelineno-19-207 name=__codelineno-19-207 href=#__codelineno-19-207></a>      &quot;domainWidth&quot;: 1
+</span><span id=__span-19-208><a id=__codelineno-19-208 name=__codelineno-19-208 href=#__codelineno-19-208></a>    }
+</span><span id=__span-19-209><a id=__codelineno-19-209 name=__codelineno-19-209 href=#__codelineno-19-209></a>  }
+</span><span id=__span-19-210><a id=__codelineno-19-210 name=__codelineno-19-210 href=#__codelineno-19-210></a>}
+</span></code></pre></div> <h4 id=46-kroki>4.6. <a href=https://kroki.io/ >Kroki</a><a class=headerlink href=#46-kroki title="Permanent link">&para;</a></h4> <p>```blockdiag {kroki=true} blockdiag { Kroki -&gt; generates -&gt; "Block diagrams"; Kroki -&gt; is -&gt; "very easy!";</p> <p>Kroki [color = "greenyellow"]; "Block diagrams" [color = "pink"]; "very easy!" [color = "orange"]; } <div class="language-text highlight"><pre><span></span><code><span id=__span-20-1><a id=__codelineno-20-1 name=__codelineno-20-1 href=#__codelineno-20-1></a>```TikZ {kroki=true}
+</span><span id=__span-20-2><a id=__codelineno-20-2 name=__codelineno-20-2 href=#__codelineno-20-2></a>\documentclass{article}
+</span><span id=__span-20-3><a id=__codelineno-20-3 name=__codelineno-20-3 href=#__codelineno-20-3></a>\usepackage{tikz}
+</span><span id=__span-20-4><a id=__codelineno-20-4 name=__codelineno-20-4 href=#__codelineno-20-4></a>\usepackage{tikz-3dplot}
+</span><span id=__span-20-5><a id=__codelineno-20-5 name=__codelineno-20-5 href=#__codelineno-20-5></a>\usetikzlibrary{math}
+</span><span id=__span-20-6><a id=__codelineno-20-6 name=__codelineno-20-6 href=#__codelineno-20-6></a>\usepackage[active,tightpage]{preview}
+</span><span id=__span-20-7><a id=__codelineno-20-7 name=__codelineno-20-7 href=#__codelineno-20-7></a>\PreviewEnvironment{tikzpicture}
+</span><span id=__span-20-8><a id=__codelineno-20-8 name=__codelineno-20-8 href=#__codelineno-20-8></a>\setlength\PreviewBorder{0.125pt}
+</span><span id=__span-20-9><a id=__codelineno-20-9 name=__codelineno-20-9 href=#__codelineno-20-9></a>%
+</span><span id=__span-20-10><a id=__codelineno-20-10 name=__codelineno-20-10 href=#__codelineno-20-10></a>% File name: directional-angles.tex
+</span><span id=__span-20-11><a id=__codelineno-20-11 name=__codelineno-20-11 href=#__codelineno-20-11></a>% Description: 
+</span><span id=__span-20-12><a id=__codelineno-20-12 name=__codelineno-20-12 href=#__codelineno-20-12></a>% The directional angles of a vector are geometrically represented.
+</span><span id=__span-20-13><a id=__codelineno-20-13 name=__codelineno-20-13 href=#__codelineno-20-13></a>% 
+</span><span id=__span-20-14><a id=__codelineno-20-14 name=__codelineno-20-14 href=#__codelineno-20-14></a>% Date of creation: July, 25th, 2021.
+</span><span id=__span-20-15><a id=__codelineno-20-15 name=__codelineno-20-15 href=#__codelineno-20-15></a>% Date of last modification: October, 9th, 2022.
+</span><span id=__span-20-16><a id=__codelineno-20-16 name=__codelineno-20-16 href=#__codelineno-20-16></a>% Author: Efra�n Soto Apolinar.
+</span><span id=__span-20-17><a id=__codelineno-20-17 name=__codelineno-20-17 href=#__codelineno-20-17></a>% https://www.aprendematematicas.org.mx/author/efrain-soto-apolinar/instructing-courses/
+</span><span id=__span-20-18><a id=__codelineno-20-18 name=__codelineno-20-18 href=#__codelineno-20-18></a>% Source: page 11 of the 
+</span><span id=__span-20-19><a id=__codelineno-20-19 name=__codelineno-20-19 href=#__codelineno-20-19></a>% Glosario Ilustrado de Matematicas Escolares.
+</span><span id=__span-20-20><a id=__codelineno-20-20 name=__codelineno-20-20 href=#__codelineno-20-20></a>% https://tinyurl.com/5udm2ufy
+</span><span id=__span-20-21><a id=__codelineno-20-21 name=__codelineno-20-21 href=#__codelineno-20-21></a>%
+</span><span id=__span-20-22><a id=__codelineno-20-22 name=__codelineno-20-22 href=#__codelineno-20-22></a>% Terms of use:
+</span><span id=__span-20-23><a id=__codelineno-20-23 name=__codelineno-20-23 href=#__codelineno-20-23></a>% According to TikZ.net
+</span><span id=__span-20-24><a id=__codelineno-20-24 name=__codelineno-20-24 href=#__codelineno-20-24></a>% https://creativecommons.org/licenses/by-nc-sa/4.0/
+</span><span id=__span-20-25><a id=__codelineno-20-25 name=__codelineno-20-25 href=#__codelineno-20-25></a>% Your commitment to the terms of use is greatly appreciated.
+</span><span id=__span-20-26><a id=__codelineno-20-26 name=__codelineno-20-26 href=#__codelineno-20-26></a>%
+</span><span id=__span-20-27><a id=__codelineno-20-27 name=__codelineno-20-27 href=#__codelineno-20-27></a>\begin{document}
+</span><span id=__span-20-28><a id=__codelineno-20-28 name=__codelineno-20-28 href=#__codelineno-20-28></a>  \tdplotsetmaincoords{80}{120}
+</span><span id=__span-20-29><a id=__codelineno-20-29 name=__codelineno-20-29 href=#__codelineno-20-29></a>  %
+</span><span id=__span-20-30><a id=__codelineno-20-30 name=__codelineno-20-30 href=#__codelineno-20-30></a>  \begin{tikzpicture}[tdplot_main_coords,scale=0.75] 
+</span><span id=__span-20-31><a id=__codelineno-20-31 name=__codelineno-20-31 href=#__codelineno-20-31></a>    % Indicate the components of the vector in rectangular coordinates
+</span><span id=__span-20-32><a id=__codelineno-20-32 name=__codelineno-20-32 href=#__codelineno-20-32></a>    \pgfmathsetmacro{\ux}{4}
+</span><span id=__span-20-33><a id=__codelineno-20-33 name=__codelineno-20-33 href=#__codelineno-20-33></a>    \pgfmathsetmacro{\uy}{4}
+</span><span id=__span-20-34><a id=__codelineno-20-34 name=__codelineno-20-34 href=#__codelineno-20-34></a>    \pgfmathsetmacro{\uz}{3}
+</span><span id=__span-20-35><a id=__codelineno-20-35 name=__codelineno-20-35 href=#__codelineno-20-35></a>    % Length of each axis
+</span><span id=__span-20-36><a id=__codelineno-20-36 name=__codelineno-20-36 href=#__codelineno-20-36></a>    \pgfmathsetmacro{\ejex}{\ux+0.5}
+</span><span id=__span-20-37><a id=__codelineno-20-37 name=__codelineno-20-37 href=#__codelineno-20-37></a>    \pgfmathsetmacro{\ejey}{\uy+0.5}
+</span><span id=__span-20-38><a id=__codelineno-20-38 name=__codelineno-20-38 href=#__codelineno-20-38></a>    \pgfmathsetmacro{\ejez}{\uz+0.5}
+</span><span id=__span-20-39><a id=__codelineno-20-39 name=__codelineno-20-39 href=#__codelineno-20-39></a>    \pgfmathsetmacro{\umag}{sqrt(\ux*\ux+\uy*\uy+\uz*\uz)} % Magnitude of vector $\vec{u}$
+</span><span id=__span-20-40><a id=__codelineno-20-40 name=__codelineno-20-40 href=#__codelineno-20-40></a>    % Compute the angle $\theta$
+</span><span id=__span-20-41><a id=__codelineno-20-41 name=__codelineno-20-41 href=#__codelineno-20-41></a>    \pgfmathsetmacro{\angthetax}{pi*atan(\uy/\ux)/180}
+</span><span id=__span-20-42><a id=__codelineno-20-42 name=__codelineno-20-42 href=#__codelineno-20-42></a>    \pgfmathsetmacro{\angthetay}{pi*atan(\ux/\uz)/180}
+</span><span id=__span-20-43><a id=__codelineno-20-43 name=__codelineno-20-43 href=#__codelineno-20-43></a>    \pgfmathsetmacro{\angthetaz}{pi*atan(\uz/\uy)/180}
+</span><span id=__span-20-44><a id=__codelineno-20-44 name=__codelineno-20-44 href=#__codelineno-20-44></a>    % Compute the angle $\phi$
+</span><span id=__span-20-45><a id=__codelineno-20-45 name=__codelineno-20-45 href=#__codelineno-20-45></a>    \pgfmathsetmacro{\angphix}{pi*acos(\ux/\umag)/180}
+</span><span id=__span-20-46><a id=__codelineno-20-46 name=__codelineno-20-46 href=#__codelineno-20-46></a>    \pgfmathsetmacro{\angphiy}{pi*acos(\uy/\umag)/180}
+</span><span id=__span-20-47><a id=__codelineno-20-47 name=__codelineno-20-47 href=#__codelineno-20-47></a>    \pgfmathsetmacro{\angphiz}{pi*acos(\uz/\umag)/180}
+</span><span id=__span-20-48><a id=__codelineno-20-48 name=__codelineno-20-48 href=#__codelineno-20-48></a>    % Compute rho sin(phi) to simplify computations
+</span><span id=__span-20-49><a id=__codelineno-20-49 name=__codelineno-20-49 href=#__codelineno-20-49></a>    \pgfmathsetmacro{\costz}{cos(\angthetax r)}
+</span><span id=__span-20-50><a id=__codelineno-20-50 name=__codelineno-20-50 href=#__codelineno-20-50></a>    \pgfmathsetmacro{\sintz}{sin(\angthetax r)}
+</span><span id=__span-20-51><a id=__codelineno-20-51 name=__codelineno-20-51 href=#__codelineno-20-51></a>    \pgfmathsetmacro{\costy}{cos(\angthetay r)}
+</span><span id=__span-20-52><a id=__codelineno-20-52 name=__codelineno-20-52 href=#__codelineno-20-52></a>    \pgfmathsetmacro{\sinty}{sin(\angthetay r)}
+</span><span id=__span-20-53><a id=__codelineno-20-53 name=__codelineno-20-53 href=#__codelineno-20-53></a>    \pgfmathsetmacro{\costx}{cos(\angthetaz r)}
+</span><span id=__span-20-54><a id=__codelineno-20-54 name=__codelineno-20-54 href=#__codelineno-20-54></a>    \pgfmathsetmacro{\sintx}{sin(\angthetaz r)}
+</span><span id=__span-20-55><a id=__codelineno-20-55 name=__codelineno-20-55 href=#__codelineno-20-55></a>    % Coordinate axis
+</span><span id=__span-20-56><a id=__codelineno-20-56 name=__codelineno-20-56 href=#__codelineno-20-56></a>    \draw[thick,-&gt;] (0,0,0) -- (\ejex,0,0) node[below left] {$x$};
+</span><span id=__span-20-57><a id=__codelineno-20-57 name=__codelineno-20-57 href=#__codelineno-20-57></a>    \draw[thick,-&gt;] (0,0,0) -- (0,\ejey,0) node[right] {$y$};
+</span><span id=__span-20-58><a id=__codelineno-20-58 name=__codelineno-20-58 href=#__codelineno-20-58></a>    \draw[thick,-&gt;] (0,0,0) -- (0,0,\ejez) node[above] {$z$};
+</span><span id=__span-20-59><a id=__codelineno-20-59 name=__codelineno-20-59 href=#__codelineno-20-59></a>    % Projections of the components in the axis
+</span><span id=__span-20-60><a id=__codelineno-20-60 name=__codelineno-20-60 href=#__codelineno-20-60></a>    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (\ux,0,0) -- (\ux,\uy,0) -- (0,\uy,0) -- (0,0,0);  % face on the plane z = 0
+</span><span id=__span-20-61><a id=__codelineno-20-61 name=__codelineno-20-61 href=#__codelineno-20-61></a>    \draw[gray,very thin,opacity=0.5] (0,0,\uz) -- (\ux,0,\uz) -- (\ux,\uy,\uz) -- (0,\uy,\uz) -- (0,0,\uz);    % face on the plane z = \uz
+</span><span id=__span-20-62><a id=__codelineno-20-62 name=__codelineno-20-62 href=#__codelineno-20-62></a>    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (0,0,\uz) -- (\ux,0,\uz) -- (\ux,0,0) -- (0,0,0);  % face on the plane y = 0
+</span><span id=__span-20-63><a id=__codelineno-20-63 name=__codelineno-20-63 href=#__codelineno-20-63></a>    \draw[gray,very thin,opacity=0.5] (0,\uy,0) -- (0,\uy,\uz) -- (\ux,\uy,\uz) -- (\ux,\uy,0) -- (0,\uy,0);    % face on the plane y = \uy
+</span><span id=__span-20-64><a id=__codelineno-20-64 name=__codelineno-20-64 href=#__codelineno-20-64></a>    \draw[gray,very thin,opacity=0.5] (0,0,0) -- (0,\uy,0) -- (0,\uy,\uz) -- (0,0,\uz) -- (0,0,0); % face on the plane x = 0
+</span><span id=__span-20-65><a id=__codelineno-20-65 name=__codelineno-20-65 href=#__codelineno-20-65></a>    \draw[gray,very thin,opacity=0.5] (\ux,0,0) -- (\ux,\uy,0) -- (\ux,\uy,\uz) -- (\ux,0,\uz) -- (\ux,0,0); % face on the plane x = \ux
+</span><span id=__span-20-66><a id=__codelineno-20-66 name=__codelineno-20-66 href=#__codelineno-20-66></a>    % Arc indicating the angle $\alpha$
+</span><span id=__span-20-67><a id=__codelineno-20-67 name=__codelineno-20-67 href=#__codelineno-20-67></a>    % (angle formed by the vector $\vec{v}$ and the $x$ axis)
+</span><span id=__span-20-68><a id=__codelineno-20-68 name=__codelineno-20-68 href=#__codelineno-20-68></a>    \draw[red,thick] plot[domain=0:\angphix,smooth,variable=\t] ({cos(\t r)},{sin(\t r)*\costx},{sin(\t r)*\sintx});
+</span><span id=__span-20-69><a id=__codelineno-20-69 name=__codelineno-20-69 href=#__codelineno-20-69></a>    % Arc indicating the angle $\beta$
+</span><span id=__span-20-70><a id=__codelineno-20-70 name=__codelineno-20-70 href=#__codelineno-20-70></a>    % (angle formed by the vector $\vec{v}$ and the $y$ axis)
+</span><span id=__span-20-71><a id=__codelineno-20-71 name=__codelineno-20-71 href=#__codelineno-20-71></a>    \draw[red,thick] plot[domain=0:\angphiy,smooth,variable=\t] ({sin(\t r)*\sinty},{cos(\t r)},{sin(\t r)*\costy});
+</span><span id=__span-20-72><a id=__codelineno-20-72 name=__codelineno-20-72 href=#__codelineno-20-72></a>    % Arc indicating the angle $\gamma$
+</span><span id=__span-20-73><a id=__codelineno-20-73 name=__codelineno-20-73 href=#__codelineno-20-73></a>    % (angle formed by the vector $\vec{v}$ and the $z$ axis)
+</span><span id=__span-20-74><a id=__codelineno-20-74 name=__codelineno-20-74 href=#__codelineno-20-74></a>    \draw[red,thick] plot[domain=0:\angphiz,smooth,variable=\t] ({sin(\t r)*\costz},{sin(\t r)*\sintz},{cos(\t r)});
+</span><span id=__span-20-75><a id=__codelineno-20-75 name=__codelineno-20-75 href=#__codelineno-20-75></a>    % Vector $\vec{u}$
+</span><span id=__span-20-76><a id=__codelineno-20-76 name=__codelineno-20-76 href=#__codelineno-20-76></a>    \draw[blue,thick,-&gt;] (0,0,0) -- (\ux,\uy,\uz) node [below right] {$\vec{u}$};
+</span><span id=__span-20-77><a id=__codelineno-20-77 name=__codelineno-20-77 href=#__codelineno-20-77></a>    % Nodes indicating the direction angles
+</span><span id=__span-20-78><a id=__codelineno-20-78 name=__codelineno-20-78 href=#__codelineno-20-78></a>    \pgfmathsetmacro{\xa}{1.85*cos(0.5*\angphix r)}
+</span><span id=__span-20-79><a id=__codelineno-20-79 name=__codelineno-20-79 href=#__codelineno-20-79></a>    \pgfmathsetmacro{\ya}{1.85*sin(0.5*\angphix r)*\costx}
+</span><span id=__span-20-80><a id=__codelineno-20-80 name=__codelineno-20-80 href=#__codelineno-20-80></a>    \pgfmathsetmacro{\za}{1.85*sin(0.5*\angphiz r)*\sintx}
+</span><span id=__span-20-81><a id=__codelineno-20-81 name=__codelineno-20-81 href=#__codelineno-20-81></a>    \node[red] at (\xa,\ya,\za) {\footnotesize$\alpha$};
+</span><span id=__span-20-82><a id=__codelineno-20-82 name=__codelineno-20-82 href=#__codelineno-20-82></a>    %
+</span><span id=__span-20-83><a id=__codelineno-20-83 name=__codelineno-20-83 href=#__codelineno-20-83></a>    \pgfmathsetmacro{\xb}{1.5*sin(0.5*\angphiy r)*\sinty}
+</span><span id=__span-20-84><a id=__codelineno-20-84 name=__codelineno-20-84 href=#__codelineno-20-84></a>    \pgfmathsetmacro{\yb}{1.5*cos(0.5*\angphiy r)}
+</span><span id=__span-20-85><a id=__codelineno-20-85 name=__codelineno-20-85 href=#__codelineno-20-85></a>    \pgfmathsetmacro{\zb}{1.5*sin(0.5*\angphiy r)*\costy}
+</span><span id=__span-20-86><a id=__codelineno-20-86 name=__codelineno-20-86 href=#__codelineno-20-86></a>    \node[red] at (\xb,\yb,\zb) {\footnotesize$\beta$};
+</span><span id=__span-20-87><a id=__codelineno-20-87 name=__codelineno-20-87 href=#__codelineno-20-87></a>    %
+</span><span id=__span-20-88><a id=__codelineno-20-88 name=__codelineno-20-88 href=#__codelineno-20-88></a>    \pgfmathsetmacro{\xc}{1.5*sin(0.5*\angphiz r)*\costz}
+</span><span id=__span-20-89><a id=__codelineno-20-89 name=__codelineno-20-89 href=#__codelineno-20-89></a>    \pgfmathsetmacro{\yc}{1.5*sin(0.5*\angphiz r)*\sintz}
+</span><span id=__span-20-90><a id=__codelineno-20-90 name=__codelineno-20-90 href=#__codelineno-20-90></a>    \pgfmathsetmacro{\zc}{1.5*cos(0.5*\angphiz r)}
+</span><span id=__span-20-91><a id=__codelineno-20-91 name=__codelineno-20-91 href=#__codelineno-20-91></a>    \node[red] at (\xc,\yc,\zc) {\footnotesize$\gamma$};
+</span><span id=__span-20-92><a id=__codelineno-20-92 name=__codelineno-20-92 href=#__codelineno-20-92></a>    %
+</span><span id=__span-20-93><a id=__codelineno-20-93 name=__codelineno-20-93 href=#__codelineno-20-93></a>  \end{tikzpicture}
+</span><span id=__span-20-94><a id=__codelineno-20-94 name=__codelineno-20-94 href=#__codelineno-20-94></a>  %
+</span><span id=__span-20-95><a id=__codelineno-20-95 name=__codelineno-20-95 href=#__codelineno-20-95></a>\end{document}
+</span></code></pre></div></p> <p>```Bytefield {kroki=true} (defattrs :bg-green {:fill "#a0ffa0"}) (defattrs :bg-yellow {:fill "#ffffa0"}) (defattrs :bg-pink {:fill "#ffb0a0"}) (defattrs :bg-cyan {:fill "#a0fafa"}) (defattrs :bg-purple {:fill "#e4b5f7"})</p> <p>(defn draw-group-label-header [span label] (draw-box (text label [:math {:font-size 12}]) {:span span :borders #{} :height 14}))</p> <p>(defn draw-remotedb-header [kind args] (draw-column-headers) (draw-group-label-header 5 "start") (draw-group-label-header 5 "TxID") (draw-group-label-header 3 "type") (draw-group-label-header 2 "args") (draw-group-label-header 1 "tags") (next-row 18)</p> <p>(draw-box 0x11 :bg-green) (draw-box 0x872349ae [{:span 4} :bg-green]) (draw-box 0x11 :bg-yellow) (draw-box (text "TxID" :math) [{:span 4} :bg-yellow]) (draw-box 0x10 :bg-pink) (draw-box (hex-text kind 4 :bold) [{:span 2} :bg-pink]) (draw-box 0x0f :bg-cyan) (draw-box (hex-text args 2 :bold) :bg-cyan) (draw-box 0x14 :bg-purple)</p> <p>(draw-box (text "0000000c" :hex [[:plain {:font-weight "light" :font-size 16}] " (12)"]) [{:span 4} :bg-purple]) (draw-box (hex-text 6 2 :bold) [:box-first :bg-purple]) (doseq [val [6 6 3 6 6 6 6 3]] (draw-box (hex-text val 2 :bold) [:box-related :bg-purple])) (doseq [val [0 0]] (draw-box val [:box-related :bg-purple])) (draw-box 0 [:box-last :bg-purple]))</p> <p>(draw-remotedb-header 0x4702 9)</p> <p>(draw-box 0x11) (draw-box 0x2104 {:span 4}) (draw-box 0x11) (draw-box 0 {:span 4}) (draw-box 0x11) (draw-box (text "length" [:math] [:sub 1]) {:span 4}) (draw-box 0x14)</p> <p>(draw-box (text "length" [:math] [:sub 1]) {:span 4}) (draw-gap "Cue and loop point bytes")</p> <p>(draw-box nil :box-below) (draw-box 0x11) (draw-box 0x36 {:span 4}) (draw-box 0x11) (draw-box (text "num" [:math] [:sub "hot"]) {:span 4}) (draw-box 0x11) (draw-box (text "num" [:math] [:sub "cue"]) {:span 4})</p> <p>(draw-box 0x11) (draw-box (text "length" [:math] [:sub 2]) {:span 4}) (draw-box 0x14) (draw-box (text "length" [:math] [:sub 2]) {:span 4}) (draw-gap "Unknown bytes" {:min-label-columns 6}) (draw-bottom) <div class="language-text highlight"><pre><span></span><code><span id=__span-21-1><a id=__codelineno-21-1 name=__codelineno-21-1 href=#__codelineno-21-1></a>```Ditaa {kroki=true}
+</span><span id=__span-21-2><a id=__codelineno-21-2 name=__codelineno-21-2 href=#__codelineno-21-2></a>      +--------+
+</span><span id=__span-21-3><a id=__codelineno-21-3 name=__codelineno-21-3 href=#__codelineno-21-3></a>      |        |
+</span><span id=__span-21-4><a id=__codelineno-21-4 name=__codelineno-21-4 href=#__codelineno-21-4></a>      |  User  |
+</span><span id=__span-21-5><a id=__codelineno-21-5 name=__codelineno-21-5 href=#__codelineno-21-5></a>      |        |
+</span><span id=__span-21-6><a id=__codelineno-21-6 name=__codelineno-21-6 href=#__codelineno-21-6></a>      +--------+
+</span><span id=__span-21-7><a id=__codelineno-21-7 name=__codelineno-21-7 href=#__codelineno-21-7></a>          ^
+</span><span id=__span-21-8><a id=__codelineno-21-8 name=__codelineno-21-8 href=#__codelineno-21-8></a>  request |
+</span><span id=__span-21-9><a id=__codelineno-21-9 name=__codelineno-21-9 href=#__codelineno-21-9></a>          v
+</span><span id=__span-21-10><a id=__codelineno-21-10 name=__codelineno-21-10 href=#__codelineno-21-10></a>  +-------------+
+</span><span id=__span-21-11><a id=__codelineno-21-11 name=__codelineno-21-11 href=#__codelineno-21-11></a>  |             |
+</span><span id=__span-21-12><a id=__codelineno-21-12 name=__codelineno-21-12 href=#__codelineno-21-12></a>  |    Kroki    |
+</span><span id=__span-21-13><a id=__codelineno-21-13 name=__codelineno-21-13 href=#__codelineno-21-13></a>  |             |---+
+</span><span id=__span-21-14><a id=__codelineno-21-14 name=__codelineno-21-14 href=#__codelineno-21-14></a>  +-------------+   |
+</span><span id=__span-21-15><a id=__codelineno-21-15 name=__codelineno-21-15 href=#__codelineno-21-15></a>       ^  ^         | inflate
+</span><span id=__span-21-16><a id=__codelineno-21-16 name=__codelineno-21-16 href=#__codelineno-21-16></a>       |  |         |
+</span><span id=__span-21-17><a id=__codelineno-21-17 name=__codelineno-21-17 href=#__codelineno-21-17></a>       v  +---------+
+</span><span id=__span-21-18><a id=__codelineno-21-18 name=__codelineno-21-18 href=#__codelineno-21-18></a>  +-------------+
+</span><span id=__span-21-19><a id=__codelineno-21-19 name=__codelineno-21-19 href=#__codelineno-21-19></a>  |             |
+</span><span id=__span-21-20><a id=__codelineno-21-20 name=__codelineno-21-20 href=#__codelineno-21-20></a>  |    Ditaa    |
+</span><span id=__span-21-21><a id=__codelineno-21-21 name=__codelineno-21-21 href=#__codelineno-21-21></a>  |             |----+
+</span><span id=__span-21-22><a id=__codelineno-21-22 name=__codelineno-21-22 href=#__codelineno-21-22></a>  +-------------+    |
+</span><span id=__span-21-23><a id=__codelineno-21-23 name=__codelineno-21-23 href=#__codelineno-21-23></a>             ^       | process
+</span><span id=__span-21-24><a id=__codelineno-21-24 name=__codelineno-21-24 href=#__codelineno-21-24></a>             |       |
+</span><span id=__span-21-25><a id=__codelineno-21-25 name=__codelineno-21-25 href=#__codelineno-21-25></a>             +-------+
+</span><span id=__span-21-26><a id=__codelineno-21-26 name=__codelineno-21-26 href=#__codelineno-21-26></a>
+</span><span id=__span-21-27><a id=__codelineno-21-27 name=__codelineno-21-27 href=#__codelineno-21-27></a>+------+------+------+------+------+------+------+
+</span><span id=__span-21-28><a id=__codelineno-21-28 name=__codelineno-21-28 href=#__codelineno-21-28></a>| c {c}|d {d} |io{io}|mo{mo}|o{o}  |s{s}  |tr{tr}|
+</span><span id=__span-21-29><a id=__codelineno-21-29 name=__codelineno-21-29 href=#__codelineno-21-29></a>+------+------+------+------+------+------+------+
+</span><span id=__span-21-30><a id=__codelineno-21-30 name=__codelineno-21-30 href=#__codelineno-21-30></a>
+</span><span id=__span-21-31><a id=__codelineno-21-31 name=__codelineno-21-31 href=#__codelineno-21-31></a>
+</span><span id=__span-21-32><a id=__codelineno-21-32 name=__codelineno-21-32 href=#__codelineno-21-32></a>+---------+  /--------\   +-------+
+</span><span id=__span-21-33><a id=__codelineno-21-33 name=__codelineno-21-33 href=#__codelineno-21-33></a>| cBLU    +--+cAAA    +---+Version|
+</span><span id=__span-21-34><a id=__codelineno-21-34 name=__codelineno-21-34 href=#__codelineno-21-34></a>|         |  |  Data  |   |   V3  |
+</span><span id=__span-21-35><a id=__codelineno-21-35 name=__codelineno-21-35 href=#__codelineno-21-35></a>|    +----+  |  Base  |   |cRED{d}|
+</span><span id=__span-21-36><a id=__codelineno-21-36 name=__codelineno-21-36 href=#__codelineno-21-36></a>|    |cPNK|  |     {s}|   +-------+
+</span><span id=__span-21-37><a id=__codelineno-21-37 name=__codelineno-21-37 href=#__codelineno-21-37></a>|    |    |  \---+----/
+</span><span id=__span-21-38><a id=__codelineno-21-38 name=__codelineno-21-38 href=#__codelineno-21-38></a>+----+----+    
+</span></code></pre></div></p> <p>```PlantUML {kroki=true} <a class="magiclink magiclink-github magiclink-mention" href=https://github.com/startmindmap title="GitHub User: startmindmap">@startmindmap</a> * Debian ** Ubuntu *** Linux Mint *** Kubuntu *** Lubuntu *** KDE Neon ** LMDE ** SolydXK ** SteamOS ** Raspbian with a very long name *** <s>Raspmbc</s> =&gt; OSMC *** <s>Raspyfi</s> =&gt; Volumio <a class="magiclink magiclink-github magiclink-mention" href=https://github.com/endmindmap title="GitHub User: endmindmap">@endmindmap</a> <div class="language-text highlight"><pre><span></span><code><span id=__span-22-1><a id=__codelineno-22-1 name=__codelineno-22-1 href=#__codelineno-22-1></a>```Nomnoml {kroki=true}
+</span><span id=__span-22-2><a id=__codelineno-22-2 name=__codelineno-22-2 href=#__codelineno-22-2></a>[Pirate|eyeCount: Int|raid();pillage()|
+</span><span id=__span-22-3><a id=__codelineno-22-3 name=__codelineno-22-3 href=#__codelineno-22-3></a>  [beard]--[parrot]
+</span><span id=__span-22-4><a id=__codelineno-22-4 name=__codelineno-22-4 href=#__codelineno-22-4></a>  [beard]-:&gt;[foul mouth]
+</span><span id=__span-22-5><a id=__codelineno-22-5 name=__codelineno-22-5 href=#__codelineno-22-5></a>]
+</span><span id=__span-22-6><a id=__codelineno-22-6 name=__codelineno-22-6 href=#__codelineno-22-6></a>
+</span><span id=__span-22-7><a id=__codelineno-22-7 name=__codelineno-22-7 href=#__codelineno-22-7></a>[&lt;abstract&gt;Marauder]&lt;:--[Pirate]
+</span><span id=__span-22-8><a id=__codelineno-22-8 name=__codelineno-22-8 href=#__codelineno-22-8></a>[Pirate]- 0..7[mischief]
+</span><span id=__span-22-9><a id=__codelineno-22-9 name=__codelineno-22-9 href=#__codelineno-22-9></a>[jollyness]-&gt;[Pirate]
+</span><span id=__span-22-10><a id=__codelineno-22-10 name=__codelineno-22-10 href=#__codelineno-22-10></a>[jollyness]-&gt;[rum]
+</span><span id=__span-22-11><a id=__codelineno-22-11 name=__codelineno-22-11 href=#__codelineno-22-11></a>[jollyness]-&gt;[singing]
+</span><span id=__span-22-12><a id=__codelineno-22-12 name=__codelineno-22-12 href=#__codelineno-22-12></a>[Pirate]-&gt; *[rum|tastiness: Int|swig()]
+</span><span id=__span-22-13><a id=__codelineno-22-13 name=__codelineno-22-13 href=#__codelineno-22-13></a>[Pirate]-&gt;[singing]
+</span><span id=__span-22-14><a id=__codelineno-22-14 name=__codelineno-22-14 href=#__codelineno-22-14></a>[singing]&lt;-&gt;[rum]
+</span></code></pre></div></p> <div class=footnote> <hr> <ol> <li id=fn:1> <p>Hi! 脚注1&#160;<a class=footnote-backref href=#fnref:1 title="Jump back to footnote 1 in the text">&#8617;</a></p> </li> <li id=fn:2> <p>Hi! 脚注2&#160;<a class=footnote-backref href=#fnref:2 title="Jump back to footnote 2 in the text">&#8617;</a></p> </li> </ol> </div> </article> </div> <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script> </div> <button type=button class="md-top md-icon" data-md-component=top hidden> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg> Back to top </button> </main> <footer class=md-footer> <nav class="md-footer__inner md-grid" aria-label=Footer> <a href=../ class="md-footer__link md-footer__link--prev" aria-label="Previous: Blog"> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg> </div> <div class=md-footer__title> <span class=md-footer__direction> Previous </span> <div class=md-ellipsis> Blog </div> </div> </a> </nav> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Copyright &copy; 2016 - 2023 Martin Donath </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> <div class=md-social> <a href=https://github.com/kuanghl target=_blank rel=noopener title=github.com class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 496 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> </a> <a href=https://hub.docker.com/r/squidfunk/mkdocs-material/ target=_blank rel=noopener title=hub.docker.com class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 640 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg> </a> <a href=https://pypi.org/project/mkdocs-material/ target=_blank rel=noopener title=pypi.org class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg> </a> <a href=https://fosstodon.org/@squidfunk target=_blank rel="noopener me" title=fosstodon.org class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 448 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg> </a> <a href=https://twitter.com/squidfunk target=_blank rel=noopener title=twitter.com class=md-social__link> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 512 512"><!-- Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg> </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script> <script src=../../assets/javascripts/bundle.d7c377c4.min.js></script> <script src=../../material/overrides/javascripts/mathjax.js></script> <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script> <script src=../../assets/javascripts/custom.2340dcd7.min.js></script> </body> </html>
