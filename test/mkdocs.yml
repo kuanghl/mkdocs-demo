@@ -1,0 +1,402 @@
+# # Project information
+# site_name: Material for MkDocs
+# site_url: https://kuanghl.github.io/mkdocs-demo/
+# site_author: Martin Donath
+# site_description: >-
+#   Write your documentation in Markdown and create a professional static site in
+#   minutes – searchable, customizable, in 60+ languages, for all devices
+
+# # Repository
+# repo_name: kuanghl/mkdocs-demo
+# repo_url: https://github.com/kuanghl/mkdocs-demo
+# edit_uri: ""
+
+# # Copyright
+# copyright: Copyright &copy; 2016 - 2023 Martin Donath
+
+# # Books
+# nav:
+#   - Home:
+#     - Index: index.md
+#   - Demo:
+#     - Latex-b: latex_b.md
+
+# # Configuration
+# theme:
+#   name: material
+#   custom_dir: docs/_aserts
+
+#   # Static files
+#   static_templates:
+#     - 404.html
+
+#   # Don't include MkDocs' JavaScript
+#   include_search_page: false
+#   search_index_only: true
+
+#   # Default values, taken from mkdocs_theme.yml
+#   language: en
+#   features:
+#     - announce.dismiss
+#     - content.action.edit
+#     - content.action.view
+#     - content.code.annotate
+#     - content.code.copy
+#     # - content.code.select
+#     # - content.tabs.link
+#     - content.tooltips
+#     # - header.autohide
+#     - navigation.expand
+#     - navigation.footer
+#     - navigation.indexes
+#     # - navigation.instant
+#     # - navigation.instant.prefetch
+#     - navigation.instant.progress
+#     - navigation.prune
+#     - navigation.sections
+#     - navigation.tabs
+#     # - navigation.tabs.sticky
+#     - navigation.top
+#     - navigation.tracking
+#     - search.highlight
+#     - search.share
+#     - search.suggest
+#     - toc.follow
+#     # - toc.integrate
+
+#   # Palette toggle for theme mode
+#   palette:
+#     - media: "(prefers-color-scheme)"
+#       toggle:
+#         icon: material/link
+#         name: Switch to light mode
+#     - media: "(prefers-color-scheme: light)"
+#       scheme: default
+#       primary: indigo
+#       accent: indigo
+#       toggle:
+#         icon: material/toggle-switch
+#         name: Switch to dark mode
+#     - media: "(prefers-color-scheme: dark)"
+#       scheme: slate
+#       primary: black
+#       accent: indigo
+#       toggle:
+#         icon: material/toggle-switch-off
+#         name: Switch to system preference
+#   font:
+#     text: Roboto
+#     code: Roboto Mono
+#   # favicon: assets/favicon.png
+#   icon:
+#     logo: logo
+
+# # Additional configuration
+# extra:
+#   status:
+#     new: Recently added
+#     deprecated: Deprecated
+#   analytics:
+#     provider: google
+#     property: !ENV GOOGLE_ANALYTICS_KEY
+#   social:
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/kuanghl
+#     - icon: fontawesome/brands/docker
+#       link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+#     - icon: fontawesome/brands/python
+#       link: https://pypi.org/project/mkdocs-material/
+#     - icon: fontawesome/brands/mastodon
+#       link: https://fosstodon.org/@squidfunk
+#     - icon: fontawesome/brands/twitter
+#       link: https://twitter.com/squidfunk
+
+# # Markdown extensions
+# markdown_extensions:
+#   - extra
+#   - tables
+#   - fenced_code
+#   - abbr
+#   - admonition
+#   - attr_list
+#   - def_list
+#   - footnotes
+#   - md_in_html
+#   - toc:
+#       permalink: true
+#   - pymdownx.arithmatex:
+#       generic: true
+#   - pymdownx.betterem:
+#       smart_enable: all
+#   - pymdownx.caret
+#   - pymdownx.details
+#   - pymdownx.emoji:
+#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#       emoji_index: !!python/name:material.extensions.emoji.twemoji
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#       line_spans: __span
+#       pygments_lang_class: true
+#   - pymdownx.inlinehilite
+#   - pymdownx.keys
+#   - pymdownx.magiclink:
+#       normalize_issue_symbols: true
+#       repo_url_shorthand: true
+#       user: squidfunk
+#       repo: mkdocs-material
+#   - pymdownx.mark
+#   - pymdownx.smartsymbols
+#   - pymdownx.snippets:
+#   - pymdownx.superfences:
+#       custom_fences:
+#         - name: mermaid
+#           class: mermaid
+#           format: !!python/name:pymdownx.superfences.fence_code_format
+#   - pymdownx.tabbed:
+#       alternate_style: true
+#       combine_header_slug: true
+#       slugify: !!python/object/apply:pymdownx.slugs.slugify
+#         kwds:
+#           case: lower
+#   - pymdownx.tasklist:
+#       custom_checkbox: true
+#   - pymdownx.tilde
+#   - mdx_truly_sane_lists
+
+# # Extern css
+# extra_css:
+#   # katex
+#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+# # Extern js
+# extra_javascript:
+#   # katex
+#   - _aserts/_js/katex.js 
+#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+#   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+#   # MathJax
+#   - _aserts/_js/mathjax.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es7
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  
+# # Plugins for mkdocs
+# plugins:
+#   - search:
+#       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+#   - minify:
+#       minify_html: true
+#   - extra-sass
+#   # - mkpdfs:
+#   #     company: The War Company Inc.
+#   #     author: Monsieur Silvestre
+#   #     output_path: ./pdf/combined.pdf
+#   - with-pdf:
+#       author: Kuanghl
+#       copyright: Copyright &copy; 2023 Khl Christie.
+  
+#       cover: true
+#       back_cover: true
+#       # cover_logo: IMAGES PATH
+#       cover_title: Mkdocs-demo
+#       cover_subtitle: Project documentation with Markdown.
+#       #custom_template_path: TEMPLATES PATH
+    
+#       #toc_title: TOC TITLE TEXT
+#       #heading_shift: false
+#       #toc_level: 3
+#       #ordered_chapter_level: 2
+#       #excludes_children:
+#       #    - 'release-notes/:upgrading'
+#       #    - 'release-notes/:changelog'
+#       #
+#       #exclude_pages:
+#       #    - 'bugs/'
+#       #    - 'appendix/contribute/'
+#       #convert_iframe:
+#       #    - src: IFRAME SRC
+#       #      img: POSTER IMAGE URL
+#       #      text: ALTERNATE TEXT
+#       #    - src: ...
+#       #two_columns_level: 3
+    
+#       render_js: true # 导致出错
+#       headless_chrome_path: chromium-browser #google-chromium #chromium-browser
+      
+#       output_path: ./pdf/mkdocs-test.pdf
+#       # custom_template_path: ./scss/
+#       # enabled_if_env: ENABLE_PDF_EXPORT
+
+#       #debug_html: true
+#       #show_anchors: true
+#       #verbose: true
+
+
+# Copyright (c) 2016-2021 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: Material for MkDocs
+site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: Martin Donath
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project – customizable,
+  searchable, mobile-friendly, 40+ languages
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2016 - 2021 Martin Donath
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/_aserts
+
+  # Static files
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  # favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - extra-sass
+  - with-pdf:
+      #cover_title:
+      cover_subtitle: Technical documentation that just works
+      # cover_logo: assets/images/banner.png
+      back_cover: true
+      # toc_level: 2
+      # excludes_children:
+      #   - 'releases/changelog/:upgrading'
+      # convert_iframe:
+      #   - src: https://streamable.com/e/zmtb00
+      #     img: https://cdn-cf-east.streamable.com/image/zmtb00-screenshot75403.jpg
+      two_columns_level: 3
+      # render_js: true # 导致出错
+      # headless_chrome_path: chromium-browser #google-chromium #chromium-browser
+      output_path: ./pdf/mkdocs-test.pdf
+      #debug_html: true
+      #verbose: true
+      #show_anchors: true
+      #enabled_if_env: ENABLE_PDF_EXPORT
+
+#use_directory_urls: false
+
+# Customization
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home:
+    - Index: index.md
+  - Demo:
+    - Latex-b: latex_b.md
