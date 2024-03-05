@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kuanghl
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: kuanghl
+Author-email: kuanghl98@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+### build and install.
+
+```sh
+# env
+pip install --upgrade build twine
+
+# 编译安装包
+python -m build
+cd dist && pip install xxx.tar.gz
+
+# 本地编译安装
+python setup.py bdist_wheel
+pip install -e .
+
+# 导入环境变量
+/home/hongliangkuang/.local/lib/python3.8/site-packages
+
+# mkdocs
+mkdocs serve --dev-addr=0.0.0.0:8000
+```
